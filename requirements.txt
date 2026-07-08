@@ -1,0 +1,7 @@
+flask
+selenium
+beautifulsoup4
+psycopg2-binary
+apscheduler
+openai
+python-dotenv
