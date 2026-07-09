@@ -1,0 +1,18 @@
+# Archivos de entorno y sensibles (ESTO ES LO MÁS IMPORTANTE)
+.env
+
+# Entornos virtuales
+venv/
+env/
+.venv/
+
+# Caché de Python
+__pycache__/
+*.pyc
+
+# Logs
+logs/*.log
+
+# IDEs
+.vscode/
+.idea/
