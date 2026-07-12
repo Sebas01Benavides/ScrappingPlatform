@@ -1,2 +1,103 @@
 2026-07-08 18:23:01,704 - ERROR - Error 403 al conectar a https://www.wikipedia.org
 2026-07-08 18:24:27,582 - INFO - Scraping estï¿½tico exitoso en https://www.wikipedia.org
+2026-07-11 22:59:23,080 - INFO - Iniciando scraping dinámico en Eneba...
+2026-07-11 22:59:26,898 - ERROR - Error extrayendo datos: ('Connection aborted.', ConnectionResetError(10054, 'Se ha forzado la interrupción de una conexión existente por el host remoto', None, 10054, None))
+2026-07-11 23:00:22,898 - INFO - Iniciando scraping dinámico en Eneba...
+2026-07-11 23:00:31,727 - ERROR - Error extrayendo datos: Message: no such element: Unable to locate element: {"method":"css selector","selector":"span[class*='payment-cost']"}
+  (Session info: chrome=150.0.7871.115); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff73d2fa865+152a5]
+	chromedriver!GetHandleVerifier [0x7ff73d2fa8c0+15300]
+	chromedriver!(No symbol) [0x7ff73ce5596d]
+	chromedriver!(No symbol) [0x7ff73ceb05a9]
+	chromedriver!(No symbol) [0x7ff73ceb08ac]
+	chromedriver!(No symbol) [0x7ff73cf010f7]
+	chromedriver!(No symbol) [0x7ff73cefdcf4]
+	chromedriver!(No symbol) [0x7ff73cea2b3c]
+	chromedriver!(No symbol) [0x7ff73cea3a53]
+	chromedriver!GetHandleVerifier [0x7ff73d8dd3a1+5f7de1]
+	chromedriver!GetHandleVerifier [0x7ff73d8d7a3b+5f247b]
+	chromedriver!GetHandleVerifier [0x7ff73d8fbca5+6166e5]
+	chromedriver!GetHandleVerifier [0x7ff73d3172ae+31cee]
+	chromedriver!GetHandleVerifier [0x7ff73d31fe3c+3a87c]
+	chromedriver!GetHandleVerifier [0x7ff73d304404+1ee44]
+	chromedriver!GetHandleVerifier [0x7ff73d304594+1efd4]
+	chromedriver!GetHandleVerifier [0x7ff73d2e75c7+2007]
+	KERNEL32!BaseThreadInitThunk [0x7ffdb42ee957+17]
+	ntdll!RtlUserThreadStart [0x7ffdb560ad6c+2c]
+
+2026-07-11 23:07:37,809 - INFO - Iniciando scraping dinámico en Eneba...
+2026-07-11 23:07:45,107 - ERROR - Error extrayendo datos: Message: no such element: Unable to locate element: {"method":"css selector","selector":"span[class*='payment-cost']"}
+  (Session info: chrome=150.0.7871.115); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff73d2fa865+152a5]
+	chromedriver!GetHandleVerifier [0x7ff73d2fa8c0+15300]
+	chromedriver!(No symbol) [0x7ff73ce5596d]
+	chromedriver!(No symbol) [0x7ff73ceb05a9]
+	chromedriver!(No symbol) [0x7ff73ceb08ac]
+	chromedriver!(No symbol) [0x7ff73cf010f7]
+	chromedriver!(No symbol) [0x7ff73cefdcf4]
+	chromedriver!(No symbol) [0x7ff73cea2b3c]
+	chromedriver!(No symbol) [0x7ff73cea3a53]
+	chromedriver!GetHandleVerifier [0x7ff73d8dd3a1+5f7de1]
+	chromedriver!GetHandleVerifier [0x7ff73d8d7a3b+5f247b]
+	chromedriver!GetHandleVerifier [0x7ff73d8fbca5+6166e5]
+	chromedriver!GetHandleVerifier [0x7ff73d3172ae+31cee]
+	chromedriver!GetHandleVerifier [0x7ff73d31fe3c+3a87c]
+	chromedriver!GetHandleVerifier [0x7ff73d304404+1ee44]
+	chromedriver!GetHandleVerifier [0x7ff73d304594+1efd4]
+	chromedriver!GetHandleVerifier [0x7ff73d2e75c7+2007]
+	KERNEL32!BaseThreadInitThunk [0x7ffdb42ee957+17]
+	ntdll!RtlUserThreadStart [0x7ffdb560ad6c+2c]
+
+2026-07-11 23:12:03,598 - INFO - Iniciando scraping dinámico en Eneba...
+2026-07-11 23:12:11,657 - ERROR - Error extrayendo datos: Message: no such element: Unable to locate element: {"method":"css selector","selector":"span[class*='payment-cost']"}
+  (Session info: chrome=150.0.7871.115); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff73d2fa865+152a5]
+	chromedriver!GetHandleVerifier [0x7ff73d2fa8c0+15300]
+	chromedriver!(No symbol) [0x7ff73ce5596d]
+	chromedriver!(No symbol) [0x7ff73ceb05a9]
+	chromedriver!(No symbol) [0x7ff73ceb08ac]
+	chromedriver!(No symbol) [0x7ff73cf010f7]
+	chromedriver!(No symbol) [0x7ff73cefdcf4]
+	chromedriver!(No symbol) [0x7ff73cea2b3c]
+	chromedriver!(No symbol) [0x7ff73cea3a53]
+	chromedriver!GetHandleVerifier [0x7ff73d8dd3a1+5f7de1]
+	chromedriver!GetHandleVerifier [0x7ff73d8d7a3b+5f247b]
+	chromedriver!GetHandleVerifier [0x7ff73d8fbca5+6166e5]
+	chromedriver!GetHandleVerifier [0x7ff73d3172ae+31cee]
+	chromedriver!GetHandleVerifier [0x7ff73d31fe3c+3a87c]
+	chromedriver!GetHandleVerifier [0x7ff73d304404+1ee44]
+	chromedriver!GetHandleVerifier [0x7ff73d304594+1efd4]
+	chromedriver!GetHandleVerifier [0x7ff73d2e75c7+2007]
+	KERNEL32!BaseThreadInitThunk [0x7ffdb42ee957+17]
+	ntdll!RtlUserThreadStart [0x7ffdb560ad6c+2c]
+
+2026-07-11 23:12:14,340 - INFO - Nuevo registro insertado: Halo: Campaign Evolved (Windows/Xbox Series X|S) XBOX LIVE Key GLOBAL
+2026-07-11 23:20:47,131 - INFO - Iniciando scraping dinámico...
+2026-07-11 23:21:10,754 - ERROR - Error en el scraping: Message: 
+
+2026-07-11 23:28:46,167 - INFO - Iniciando scraping dinámico con camuflaje...
+2026-07-11 23:29:08,207 - ERROR - Error en el scraping: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff73d2fa865+152a5]
+	chromedriver!GetHandleVerifier [0x7ff73d2fa8c0+15300]
+	chromedriver!(No symbol) [0x7ff73ce5596d]
+	chromedriver!(No symbol) [0x7ff73ceb05a9]
+	chromedriver!(No symbol) [0x7ff73ceb08ac]
+	chromedriver!(No symbol) [0x7ff73cf010f7]
+	chromedriver!(No symbol) [0x7ff73cefdcf4]
+	chromedriver!(No symbol) [0x7ff73cea2b3c]
+	chromedriver!(No symbol) [0x7ff73cea3a53]
+	chromedriver!GetHandleVerifier [0x7ff73d8dd3a1+5f7de1]
+	chromedriver!GetHandleVerifier [0x7ff73d8d7a3b+5f247b]
+	chromedriver!GetHandleVerifier [0x7ff73d8fbca5+6166e5]
+	chromedriver!GetHandleVerifier [0x7ff73d3172ae+31cee]
+	chromedriver!GetHandleVerifier [0x7ff73d31fe3c+3a87c]
+	chromedriver!GetHandleVerifier [0x7ff73d304404+1ee44]
+	chromedriver!GetHandleVerifier [0x7ff73d304594+1efd4]
+	chromedriver!GetHandleVerifier [0x7ff73d2e75c7+2007]
+	KERNEL32!BaseThreadInitThunk [0x7ffdb42ee957+17]
+	ntdll!RtlUserThreadStart [0x7ffdb560ad6c+2c]
+

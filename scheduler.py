@@ -1,16 +1,33 @@
-from utils.logger_config import setup_logger
+import time
+import logging
 import subprocess
+from apscheduler.schedulers.background import BackgroundScheduler
 
-logger = setup_logger("scheduler")
+# Configuración de logs estandarizada
+logging.basicConfig(level=logging.INFO, filename='logs/scraper.log', 
+                    format='%(asctime)s - %(levelname)s - %(message)s')
 
 def job():
+    """Ejecuta el proceso principal de scraping."""
     try:
-        logger.info("Scheduler ejecutando proceso...")
-        # Llama a tu script de forma segura
-        subprocess.run(["python", "scrapper/scrapper_static.py"], check=True)
-        logger.info("Proceso terminado correctamente.")
+        logging.info("Scheduler: Ejecutando main.py...")
+        # Ejecutamos main.py que es el orquestador que creamos
+        subprocess.run(["python", "main.py"], check=True)
+        logging.info("Scheduler: Proceso main.py terminado correctamente.")
     except Exception as e:
-        logger.error(f"Error en scheduler: {e}")
+        logging.error(f"Error en scheduler al ejecutar main.py: {e}")
 
 if __name__ == "__main__":
-    job()
+    scheduler = BackgroundScheduler()
+    # Programar el job cada 30 minutos
+    scheduler.add_job(job, 'interval', minutes=30)
+    scheduler.start()
+    
+    logging.info("Scheduler iniciado. Ejecutando cada 30 minutos...")
+    
+    try:
+        # Mantener el proceso vivo
+        while True:
+            time.sleep(1)
+    except (KeyboardInterrupt, SystemExit):
+        scheduler.shutdown()

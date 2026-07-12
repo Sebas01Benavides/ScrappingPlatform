@@ -1,3 +1,4 @@
+
 -- 1. Tabla para almacenar la información extraída (Scraping)
 CREATE TABLE IF NOT EXISTS resultados_scraping (
     id SERIAL PRIMARY KEY,
@@ -14,3 +15,13 @@ CREATE TABLE IF NOT EXISTS logs_ejecucion (
     estado VARCHAR(50),             -- Ejemplo: 'EXITO' o 'ERROR'
     mensaje TEXT                    -- Detalles adicionales
 );
+-- 3. Tabla para juegos
+CREATE TABLE IF NOT EXISTS juegos (
+    id SERIAL PRIMARY KEY,
+    nombre VARCHAR(100),
+    precio decimal(10,2)
+);
+
+ALTER TABLE juegos ADD COLUMN hash_datos VARCHAR(255);
+
+SELECT * FROM juegos;

@@ -1,0 +1,19 @@
+2026-07-11 21:47:09,683 - api_server - INFO - Solicitud recibida en /datos
+2026-07-11 22:08:22,575 - api_server - INFO - Solicitud recibida en /datos
+2026-07-11 22:08:22,647 - api_server - ERROR - Error al obtener datos: connection to server at "localhost" (::1), port 5432 failed: fe_sendauth: no password supplied
+
+2026-07-11 22:08:55,075 - api_server - INFO - Solicitud recibida en /datos
+2026-07-11 22:08:55,135 - api_server - ERROR - Error al obtener datos: connection to server at "localhost" (::1), port 5432 failed: fe_sendauth: no password supplied
+
+2026-07-11 22:09:05,723 - api_server - INFO - Solicitud recibida en /datos
+2026-07-11 22:09:05,775 - api_server - ERROR - Error al obtener datos: connection to server at "localhost" (::1), port 5432 failed: fe_sendauth: no password supplied
+
+2026-07-11 22:09:44,753 - api_server - INFO - Solicitud recibida en /datos
+2026-07-11 22:09:44,811 - api_server - ERROR - Error al obtener datos: connection to server at "localhost" (::1), port 5432 failed: fe_sendauth: no password supplied
+
+2026-07-11 22:10:09,933 - api_server - INFO - Solicitud recibida en /datos
+2026-07-11 22:10:09,989 - api_server - ERROR - Error al obtener datos: connection to server at "localhost" (::1), port 5432 failed: fe_sendauth: no password supplied
+
+2026-07-11 22:10:49,640 - api_server - INFO - Solicitud recibida en /datos
+2026-07-11 22:10:49,705 - api_server - ERROR - Error al obtener datos: connection to server at "localhost" (::1), port 5432 failed: fe_sendauth: no password supplied
+

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>Dashboard Scrapping</title></head>
+<body>
+    <h1>Datos de Juegos</h1>
+    <table>
+        <thead><tr><th>ID</th><th>Nombre</th><th>Precio</th></tr></thead>
+        <tbody></tbody>
+    </table>
+    <script>
+        fetch('/datos')
+            .then(res => res.json())
+            .then(data => {
+                const tbody = document.querySelector('tbody');
+                data.data.forEach(juego => {
+                    tbody.innerHTML += `<tr><td>${juego.id}</td><td>${juego.nombre}</td><td>${juego.precio}</td></tr>`;
+                });
+            });
+    </script>
+</body>
+</html>
