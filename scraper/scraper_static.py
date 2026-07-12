@@ -1,29 +1,46 @@
+import logging
 import requests
 from bs4 import BeautifulSoup
-import logging
 
-# Configuración de logs estandarizada
-logging.basicConfig(level=logging.INFO, filename='logs/scraper.log', 
-                    format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(
+    level=logging.INFO,
+    filename="logs/scraper.log",
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
 
 def scrap_estatico(url):
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        "User-Agent": "Mozilla/5.0"
     }
-    
+
     try:
-        response = requests.get(url, headers=headers, timeout=10)
-        if response.status_code == 200:
-            soup = BeautifulSoup(response.text, 'html.parser')
-            # Extraer títulos según necesidad del proyecto
-            titulos = soup.find_all('h2')
-            for t in titulos:
-                logging.info(f"Encontrado en {url}: {t.text.strip()}")
-        else:
-            logging.error(f"Error {response.status_code} al conectar a {url}")
-            
+        response = requests.get(url, headers=headers, timeout=15)
+        response.raise_for_status()
+
+        soup = BeautifulSoup(response.text, "html.parser")
+        titulos = [t.get_text(strip=True) for t in soup.find_all(["h1", "h2"])][:10]
+
+        for titulo in titulos:
+            logging.info(f"Encontrado en {url}: {titulo}")
+
+        return {
+            "fuente": url,
+            "titulos": titulos,
+            "total": len(titulos),
+            "html_fragment": str(soup)[:1200]
+        }
+
     except Exception as e:
-        logging.error(f"Excepción en scraping estático: {e}")
+        logging.exception(f"Excepción en scraping estático: {e}")
+        return {
+            "fuente": url,
+            "titulos": [],
+            "total": 0,
+            "html_fragment": "",
+            "error": str(e)
+        }
+
 
 if __name__ == "__main__":
-    scrap_estatico("https://www.wikipedia.org")
+    print(scrap_estatico("https://www.wikipedia.org"))

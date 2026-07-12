@@ -1,103 +1,103 @@
-2026-07-08 18:23:01,704 - ERROR - Error 403 al conectar a https://www.wikipedia.org
-2026-07-08 18:24:27,582 - INFO - Scraping estï¿½tico exitoso en https://www.wikipedia.org
-2026-07-11 22:59:23,080 - INFO - Iniciando scraping dinámico en Eneba...
-2026-07-11 22:59:26,898 - ERROR - Error extrayendo datos: ('Connection aborted.', ConnectionResetError(10054, 'Se ha forzado la interrupción de una conexión existente por el host remoto', None, 10054, None))
-2026-07-11 23:00:22,898 - INFO - Iniciando scraping dinámico en Eneba...
-2026-07-11 23:00:31,727 - ERROR - Error extrayendo datos: Message: no such element: Unable to locate element: {"method":"css selector","selector":"span[class*='payment-cost']"}
-  (Session info: chrome=150.0.7871.115); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Stacktrace:
-	chromedriver!GetHandleVerifier [0x7ff73d2fa865+152a5]
-	chromedriver!GetHandleVerifier [0x7ff73d2fa8c0+15300]
-	chromedriver!(No symbol) [0x7ff73ce5596d]
-	chromedriver!(No symbol) [0x7ff73ceb05a9]
-	chromedriver!(No symbol) [0x7ff73ceb08ac]
-	chromedriver!(No symbol) [0x7ff73cf010f7]
-	chromedriver!(No symbol) [0x7ff73cefdcf4]
-	chromedriver!(No symbol) [0x7ff73cea2b3c]
-	chromedriver!(No symbol) [0x7ff73cea3a53]
-	chromedriver!GetHandleVerifier [0x7ff73d8dd3a1+5f7de1]
-	chromedriver!GetHandleVerifier [0x7ff73d8d7a3b+5f247b]
-	chromedriver!GetHandleVerifier [0x7ff73d8fbca5+6166e5]
-	chromedriver!GetHandleVerifier [0x7ff73d3172ae+31cee]
-	chromedriver!GetHandleVerifier [0x7ff73d31fe3c+3a87c]
-	chromedriver!GetHandleVerifier [0x7ff73d304404+1ee44]
-	chromedriver!GetHandleVerifier [0x7ff73d304594+1efd4]
-	chromedriver!GetHandleVerifier [0x7ff73d2e75c7+2007]
-	KERNEL32!BaseThreadInitThunk [0x7ffdb42ee957+17]
-	ntdll!RtlUserThreadStart [0x7ffdb560ad6c+2c]
+2026-07-12 00:35:49,441 - INFO - Iniciando proceso principal de scraping...
+2026-07-12 00:35:50,251 - INFO - Encontrado en https://www.wikipedia.org: WikipediaThe Free Encyclopedia
+2026-07-12 00:35:50,251 - INFO - Encontrado en https://www.wikipedia.org: 1,000,000+articles
+2026-07-12 00:35:50,251 - INFO - Encontrado en https://www.wikipedia.org: 100,000+articles
+2026-07-12 00:35:50,251 - INFO - Encontrado en https://www.wikipedia.org: 10,000+articles
+2026-07-12 00:35:50,251 - INFO - Encontrado en https://www.wikipedia.org: 1,000+articles
+2026-07-12 00:35:50,251 - INFO - Encontrado en https://www.wikipedia.org: 100+articles
+2026-07-12 00:36:03,474 - INFO - Texto detectado: 49,81 US$
+2026-07-12 00:36:03,481 - INFO - Texto detectado: 46,34 US$
+2026-07-12 00:36:03,489 - INFO - Texto detectado: 49,81 US$
+2026-07-12 00:36:03,496 - INFO - Texto detectado: 46,34 US$
+2026-07-12 00:36:03,514 - INFO - Texto detectado: 46,34 US$
+2026-07-12 00:36:03,525 - INFO - Texto detectado: 46,83 US$
+2026-07-12 00:36:03,544 - INFO - Precio encontrado: 46.34
+2026-07-12 00:36:07,773 - INFO - HTTP Request: POST https://voiceflip-openai.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 401 PermissionDenied"
+2026-07-12 00:36:07,813 - ERROR - Error en main.py: no existe la columna ï¿½fuenteï¿½ en la relaciï¿½n ï¿½juegosï¿½
+LINE 3: ...44793ca528f5f13b82098226ca3acf08f629d4e3ad1d20f', fuente = N...
+                                                             ^
+Traceback (most recent call last):
+  File "C:\Users\Maverick\Documents\ScrappingPlatform\main.py", line 129, in main
+    accion = procesar_juego(conn, resultado_dinamico)
+  File "C:\Users\Maverick\Documents\ScrappingPlatform\main.py", line 82, in procesar_juego
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<9 lines>...
+        )
+        ^
+    )
+    ^
+psycopg2.errors.UndefinedColumn: no existe la columna ï¿½fuenteï¿½ en la relaciï¿½n ï¿½juegosï¿½
+LINE 3: ...44793ca528f5f13b82098226ca3acf08f629d4e3ad1d20f', fuente = N...
+                                                             ^
 
-2026-07-11 23:07:37,809 - INFO - Iniciando scraping dinámico en Eneba...
-2026-07-11 23:07:45,107 - ERROR - Error extrayendo datos: Message: no such element: Unable to locate element: {"method":"css selector","selector":"span[class*='payment-cost']"}
-  (Session info: chrome=150.0.7871.115); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Stacktrace:
-	chromedriver!GetHandleVerifier [0x7ff73d2fa865+152a5]
-	chromedriver!GetHandleVerifier [0x7ff73d2fa8c0+15300]
-	chromedriver!(No symbol) [0x7ff73ce5596d]
-	chromedriver!(No symbol) [0x7ff73ceb05a9]
-	chromedriver!(No symbol) [0x7ff73ceb08ac]
-	chromedriver!(No symbol) [0x7ff73cf010f7]
-	chromedriver!(No symbol) [0x7ff73cefdcf4]
-	chromedriver!(No symbol) [0x7ff73cea2b3c]
-	chromedriver!(No symbol) [0x7ff73cea3a53]
-	chromedriver!GetHandleVerifier [0x7ff73d8dd3a1+5f7de1]
-	chromedriver!GetHandleVerifier [0x7ff73d8d7a3b+5f247b]
-	chromedriver!GetHandleVerifier [0x7ff73d8fbca5+6166e5]
-	chromedriver!GetHandleVerifier [0x7ff73d3172ae+31cee]
-	chromedriver!GetHandleVerifier [0x7ff73d31fe3c+3a87c]
-	chromedriver!GetHandleVerifier [0x7ff73d304404+1ee44]
-	chromedriver!GetHandleVerifier [0x7ff73d304594+1efd4]
-	chromedriver!GetHandleVerifier [0x7ff73d2e75c7+2007]
-	KERNEL32!BaseThreadInitThunk [0x7ffdb42ee957+17]
-	ntdll!RtlUserThreadStart [0x7ffdb560ad6c+2c]
-
-2026-07-11 23:12:03,598 - INFO - Iniciando scraping dinámico en Eneba...
-2026-07-11 23:12:11,657 - ERROR - Error extrayendo datos: Message: no such element: Unable to locate element: {"method":"css selector","selector":"span[class*='payment-cost']"}
-  (Session info: chrome=150.0.7871.115); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Stacktrace:
-	chromedriver!GetHandleVerifier [0x7ff73d2fa865+152a5]
-	chromedriver!GetHandleVerifier [0x7ff73d2fa8c0+15300]
-	chromedriver!(No symbol) [0x7ff73ce5596d]
-	chromedriver!(No symbol) [0x7ff73ceb05a9]
-	chromedriver!(No symbol) [0x7ff73ceb08ac]
-	chromedriver!(No symbol) [0x7ff73cf010f7]
-	chromedriver!(No symbol) [0x7ff73cefdcf4]
-	chromedriver!(No symbol) [0x7ff73cea2b3c]
-	chromedriver!(No symbol) [0x7ff73cea3a53]
-	chromedriver!GetHandleVerifier [0x7ff73d8dd3a1+5f7de1]
-	chromedriver!GetHandleVerifier [0x7ff73d8d7a3b+5f247b]
-	chromedriver!GetHandleVerifier [0x7ff73d8fbca5+6166e5]
-	chromedriver!GetHandleVerifier [0x7ff73d3172ae+31cee]
-	chromedriver!GetHandleVerifier [0x7ff73d31fe3c+3a87c]
-	chromedriver!GetHandleVerifier [0x7ff73d304404+1ee44]
-	chromedriver!GetHandleVerifier [0x7ff73d304594+1efd4]
-	chromedriver!GetHandleVerifier [0x7ff73d2e75c7+2007]
-	KERNEL32!BaseThreadInitThunk [0x7ffdb42ee957+17]
-	ntdll!RtlUserThreadStart [0x7ffdb560ad6c+2c]
-
-2026-07-11 23:12:14,340 - INFO - Nuevo registro insertado: Halo: Campaign Evolved (Windows/Xbox Series X|S) XBOX LIVE Key GLOBAL
-2026-07-11 23:20:47,131 - INFO - Iniciando scraping dinámico...
-2026-07-11 23:21:10,754 - ERROR - Error en el scraping: Message: 
-
-2026-07-11 23:28:46,167 - INFO - Iniciando scraping dinámico con camuflaje...
-2026-07-11 23:29:08,207 - ERROR - Error en el scraping: Message: 
-Stacktrace:
-	chromedriver!GetHandleVerifier [0x7ff73d2fa865+152a5]
-	chromedriver!GetHandleVerifier [0x7ff73d2fa8c0+15300]
-	chromedriver!(No symbol) [0x7ff73ce5596d]
-	chromedriver!(No symbol) [0x7ff73ceb05a9]
-	chromedriver!(No symbol) [0x7ff73ceb08ac]
-	chromedriver!(No symbol) [0x7ff73cf010f7]
-	chromedriver!(No symbol) [0x7ff73cefdcf4]
-	chromedriver!(No symbol) [0x7ff73cea2b3c]
-	chromedriver!(No symbol) [0x7ff73cea3a53]
-	chromedriver!GetHandleVerifier [0x7ff73d8dd3a1+5f7de1]
-	chromedriver!GetHandleVerifier [0x7ff73d8d7a3b+5f247b]
-	chromedriver!GetHandleVerifier [0x7ff73d8fbca5+6166e5]
-	chromedriver!GetHandleVerifier [0x7ff73d3172ae+31cee]
-	chromedriver!GetHandleVerifier [0x7ff73d31fe3c+3a87c]
-	chromedriver!GetHandleVerifier [0x7ff73d304404+1ee44]
-	chromedriver!GetHandleVerifier [0x7ff73d304594+1efd4]
-	chromedriver!GetHandleVerifier [0x7ff73d2e75c7+2007]
-	KERNEL32!BaseThreadInitThunk [0x7ffdb42ee957+17]
-	ntdll!RtlUserThreadStart [0x7ffdb560ad6c+2c]
-
+2026-07-12 00:40:49,122 - INFO - Iniciando proceso principal de scraping...
+2026-07-12 00:40:50,211 - INFO - Encontrado en https://www.wikipedia.org: WikipediaThe Free Encyclopedia
+2026-07-12 00:40:50,211 - INFO - Encontrado en https://www.wikipedia.org: 1,000,000+articles
+2026-07-12 00:40:50,211 - INFO - Encontrado en https://www.wikipedia.org: 100,000+articles
+2026-07-12 00:40:50,211 - INFO - Encontrado en https://www.wikipedia.org: 10,000+articles
+2026-07-12 00:40:50,211 - INFO - Encontrado en https://www.wikipedia.org: 1,000+articles
+2026-07-12 00:40:50,211 - INFO - Encontrado en https://www.wikipedia.org: 100+articles
+2026-07-12 00:41:02,991 - INFO - Texto detectado: 49,81 US$
+2026-07-12 00:41:02,998 - INFO - Texto detectado: 46,34 US$
+2026-07-12 00:41:03,004 - INFO - Texto detectado: 49,81 US$
+2026-07-12 00:41:03,012 - INFO - Texto detectado: 46,34 US$
+2026-07-12 00:41:03,019 - INFO - Texto detectado: 46,34 US$
+2026-07-12 00:41:03,027 - INFO - Texto detectado: 46,83 US$
+2026-07-12 00:41:03,042 - INFO - Precio encontrado: 46.34
+2026-07-12 00:41:07,798 - INFO - HTTP Request: POST https://voiceflip-openai.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 401 PermissionDenied"
+2026-07-12 00:41:07,835 - INFO - Nuevo registro insertado: Halo: Campaign Evolved (Windows/Xbox Series X|S) XBOX LIVE Key GLOBAL
+2026-07-12 00:41:07,838 - INFO - Proceso finalizado correctamente.
+2026-07-12 00:45:31,463 - INFO - Iniciando proceso principal de scraping...
+2026-07-12 00:45:32,333 - INFO - Encontrado en https://www.wikipedia.org: WikipediaThe Free Encyclopedia
+2026-07-12 00:45:32,333 - INFO - Encontrado en https://www.wikipedia.org: 1,000,000+articles
+2026-07-12 00:45:32,333 - INFO - Encontrado en https://www.wikipedia.org: 100,000+articles
+2026-07-12 00:45:32,333 - INFO - Encontrado en https://www.wikipedia.org: 10,000+articles
+2026-07-12 00:45:32,333 - INFO - Encontrado en https://www.wikipedia.org: 1,000+articles
+2026-07-12 00:45:32,333 - INFO - Encontrado en https://www.wikipedia.org: 100+articles
+2026-07-12 00:45:44,772 - INFO - Texto detectado: 49,81 US$
+2026-07-12 00:45:44,778 - INFO - Texto detectado: 46,34 US$
+2026-07-12 00:45:44,784 - INFO - Texto detectado: 49,81 US$
+2026-07-12 00:45:44,790 - INFO - Texto detectado: 46,34 US$
+2026-07-12 00:45:44,796 - INFO - Texto detectado: 46,34 US$
+2026-07-12 00:45:44,801 - INFO - Texto detectado: 46,83 US$
+2026-07-12 00:45:44,836 - INFO - Precio encontrado: 46.34
+2026-07-12 00:45:49,390 - INFO - HTTP Request: POST https://voiceflip-openai.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 401 PermissionDenied"
+2026-07-12 00:45:49,427 - INFO - Sin cambios para: Halo: Campaign Evolved (Windows/Xbox Series X|S) XBOX LIVE Key GLOBAL
+2026-07-12 00:45:49,430 - INFO - Proceso finalizado correctamente.
+2026-07-12 00:46:42,962 - INFO - Iniciando proceso principal de scraping...
+2026-07-12 00:46:44,016 - INFO - Encontrado en https://www.wikipedia.org: WikipediaThe Free Encyclopedia
+2026-07-12 00:46:44,016 - INFO - Encontrado en https://www.wikipedia.org: 1,000,000+articles
+2026-07-12 00:46:44,016 - INFO - Encontrado en https://www.wikipedia.org: 100,000+articles
+2026-07-12 00:46:44,016 - INFO - Encontrado en https://www.wikipedia.org: 10,000+articles
+2026-07-12 00:46:44,016 - INFO - Encontrado en https://www.wikipedia.org: 1,000+articles
+2026-07-12 00:46:44,016 - INFO - Encontrado en https://www.wikipedia.org: 100+articles
+2026-07-12 00:46:56,605 - INFO - Texto detectado: 49,81 US$
+2026-07-12 00:46:56,611 - INFO - Texto detectado: 46,34 US$
+2026-07-12 00:46:56,619 - INFO - Texto detectado: 49,81 US$
+2026-07-12 00:46:56,625 - INFO - Texto detectado: 46,34 US$
+2026-07-12 00:46:56,632 - INFO - Texto detectado: 46,34 US$
+2026-07-12 00:46:56,638 - INFO - Texto detectado: 46,83 US$
+2026-07-12 00:46:56,650 - INFO - Precio encontrado: 46.34
+2026-07-12 00:47:00,870 - INFO - HTTP Request: POST https://voiceflip-openai.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 401 PermissionDenied"
+2026-07-12 00:47:00,913 - INFO - Registro actualizado: Halo: Campaign Evolved (Windows/Xbox Series X|S) XBOX LIVE Key GLOBAL
+2026-07-12 00:47:00,915 - INFO - Proceso finalizado correctamente.
+2026-07-12 00:53:59,033 - INFO - Iniciando proceso principal de scraping...
+2026-07-12 00:53:59,819 - INFO - Encontrado en https://www.wikipedia.org: WikipediaThe Free Encyclopedia
+2026-07-12 00:53:59,819 - INFO - Encontrado en https://www.wikipedia.org: 1,000,000+articles
+2026-07-12 00:53:59,819 - INFO - Encontrado en https://www.wikipedia.org: 100,000+articles
+2026-07-12 00:53:59,819 - INFO - Encontrado en https://www.wikipedia.org: 10,000+articles
+2026-07-12 00:53:59,819 - INFO - Encontrado en https://www.wikipedia.org: 1,000+articles
+2026-07-12 00:53:59,819 - INFO - Encontrado en https://www.wikipedia.org: 100+articles
+2026-07-12 00:54:12,917 - INFO - Texto detectado: 49,81 US$
+2026-07-12 00:54:12,940 - INFO - Texto detectado: 46,34 US$
+2026-07-12 00:54:12,945 - INFO - Texto detectado: 49,81 US$
+2026-07-12 00:54:12,950 - INFO - Texto detectado: 46,34 US$
+2026-07-12 00:54:12,957 - INFO - Texto detectado: 46,34 US$
+2026-07-12 00:54:12,963 - INFO - Texto detectado: 46,83 US$
+2026-07-12 00:54:12,978 - INFO - Precio encontrado: 46.34
+2026-07-12 00:54:18,220 - INFO - HTTP Request: POST https://voiceflip-openai.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2026-07-12 00:54:18,267 - INFO - Sin cambios para: Halo: Campaign Evolved (Windows/Xbox Series X|S) XBOX LIVE Key GLOBAL
+2026-07-12 00:54:18,269 - INFO - Proceso finalizado correctamente.

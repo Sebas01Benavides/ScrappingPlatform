@@ -1,43 +1,65 @@
 import os
-import psycopg2
-from flask import Flask, jsonify, render_template
-from dotenv import load_dotenv
 from pathlib import Path
 
-# Carga el .env desde la raíz
-BASE_DIR = Path(__file__).resolve().parent.parent
-load_dotenv(dotenv_path=BASE_DIR / '.env')
+import psycopg2
+from dotenv import load_dotenv
+from flask import Flask, jsonify, render_template
 
-app = Flask(__name__, template_folder='../frontend')
+BASE_DIR = Path(__file__).resolve().parent.parent
+load_dotenv(BASE_DIR / ".env")
+
+app = Flask(__name__, template_folder=str(BASE_DIR / "frontend"))
+
 
 def get_db_connection():
-    return psycopg2.connect(
-        dbname=os.getenv("DB_NAME"),
-        user=os.getenv("DB_USER"),
-        password=os.getenv("DB_PASSWORD"),
-        host=os.getenv("DB_HOST"),
-        port=os.getenv("DB_PORT")
-    )
+    database_url = os.getenv("DATABASE_URL")
+    if not database_url:
+        raise ValueError("No se encontró DATABASE_URL en el .env")
+    return psycopg2.connect(database_url)
 
-@app.route('/')
+
+@app.route("/")
 def index():
-    return render_template('index.html')
+    return render_template("index.html")
 
-@app.route('/datos', methods=['GET'])
+
+@app.route("/health")
+def health():
+    return jsonify({"status": "ok"})
+
+
+@app.route("/datos", methods=["GET"])
 def obtener_datos():
     conn = None
     try:
         conn = get_db_connection()
         cur = conn.cursor()
-        cur.execute("SELECT id, nombre, precio FROM juegos;")
+        cur.execute(
+            "SELECT id, nombre, precio, hash_datos, fuente, fecha_extraccion FROM juegos ORDER BY id DESC"
+        )
         rows = cur.fetchall()
-        data = [{"id": r[0], "nombre": r[1], "precio": r[2]} for r in rows]
+
+        data = []
+        for row in rows:
+            data.append({
+                "id": row[0],
+                "nombre": row[1],
+                "precio": float(row[2]) if row[2] is not None else None,
+                "hash_datos": row[3],
+                "fuente": row[4],
+                "fecha_extraccion": str(row[5])
+            })
+
         cur.close()
         return jsonify({"status": "success", "data": data})
+
     except Exception as e:
         return jsonify({"status": "error", "message": str(e)}), 500
-    finally:
-        if conn: conn.close()
 
-if __name__ == '__main__':
-    app.run(port=5000, debug=True)
+    finally:
+        if conn:
+            conn.close()
+
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=False)

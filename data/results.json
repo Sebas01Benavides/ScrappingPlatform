@@ -1,0 +1,20 @@
+{
+    "static": {
+        "fuente": "https://www.wikipedia.org",
+        "titulos": [
+            "WikipediaThe Free Encyclopedia",
+            "1,000,000+articles",
+            "100,000+articles",
+            "10,000+articles",
+            "1,000+articles",
+            "100+articles"
+        ],
+        "total": 6,
+        "html_fragment": "<!DOCTYPE html>\n\n<html class=\"no-js\" lang=\"en\">\n<head>\n<meta charset=\"utf-8\"/>\n<title>Wikipedia</title>\n<meta content=\"Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation.\" name=\"description\"/>\n<script>\ndocument.documentElement.className = document.documentElement.className.replace( /(^|\\s)no-js(\\s|$)/, \"$1js-enabled$2\" );\n</script>\n<meta content=\"initial-scale=1,user-scalable=yes\" name=\"viewport\"/>\n<link href=\"/static/apple-touch/wikipedia.png\" rel=\"apple-touch-icon\"/>\n<link href=\"/static/favicon/wikipedia.ico\" rel=\"shortcut icon\"/>\n<link href=\"//creativecommons.org/licenses/by-sa/4.0/\" rel=\"license\"/>\n<style>\n.sprite{background-image:linear-gradient(transparent,transparent),url(portal/wikipedia.org/assets/img/sprite-e49fbf32.svg);background-repeat:no-repeat;display:inline-block;vertical-align:middle}.svg-Commons-logo_sister{background-position:0 0;width:47px;height:47px}.svg-MediaWiki-logo_sister{background-position:0 -47px;width:42px;height:42px}.svg-Meta-Wiki-logo_sister{background-position:0 -89px;width:37px;height:37px}.svg-Wikibooks-logo_sister{background-position:0 -126px;width:37px;height:37px}.s"
+    },
+    "dynamic": {
+        "titulo": "Halo: Campaign Evolved (Windows/Xbox Series X|S) XBOX LIVE Key GLOBAL",
+        "precio": "46.34",
+        "fuente": "https://www.eneba.com/latam/xbox-halo-campaign-evolved-windows-xbox-series-x-s-xbox-live-key-global"
+    }
+}

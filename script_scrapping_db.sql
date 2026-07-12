@@ -1,27 +1,25 @@
-
--- 1. Tabla para almacenar la información extraída (Scraping)
-CREATE TABLE IF NOT EXISTS resultados_scraping (
+CREATE TABLE juegos (
     id SERIAL PRIMARY KEY,
-    fuente VARCHAR(100),            -- Ejemplo: 'Wikipedia' o 'Sitio X'
-    titulo TEXT,                    -- El contenido que extraes
-    url_origen VARCHAR(255),        -- De dónde vino el dato
-    fecha_extraccion TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    nombre TEXT NOT NULL,
+    precio NUMERIC(10,2),
+    hash_datos TEXT NOT NULL,
+    fuente TEXT
 );
 
--- 2. Tabla para registrar los logs o historial de ejecuciones
-CREATE TABLE IF NOT EXISTS logs_ejecucion (
+CREATE TABLE resultados_scraping (
     id SERIAL PRIMARY KEY,
-    fecha_ejecucion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    estado VARCHAR(50),             -- Ejemplo: 'EXITO' o 'ERROR'
-    mensaje TEXT                    -- Detalles adicionales
-);
--- 3. Tabla para juegos
-CREATE TABLE IF NOT EXISTS juegos (
-    id SERIAL PRIMARY KEY,
-    nombre VARCHAR(100),
-    precio decimal(10,2)
+    fuente TEXT,
+    titulo TEXT,
+    url_origen TEXT
 );
 
-ALTER TABLE juegos ADD COLUMN hash_datos VARCHAR(255);
+CREATE TABLE logs_ejecucion (
+    id SERIAL PRIMARY KEY,
+    estado TEXT,
+    mensaje TEXT
+);
+
 
 SELECT * FROM juegos;
+SELECT * FROM resultados_scraping;
+SELECT * FROM logs_ejecucion;

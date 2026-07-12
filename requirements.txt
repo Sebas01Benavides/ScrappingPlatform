@@ -1,18 +1,9 @@
-# Web Scraping
 selenium==4.20.0
 beautifulsoup4==4.12.3
-
-# API y Backend
+requests==2.32.3
 flask==3.0.3
-
-# Base de Datos
 psycopg2-binary==2.9.9
-
-# Gestión de Entorno
 python-dotenv==1.0.1
-
-# IA (Azure OpenAI)
 openai==1.30.0
-
-# Automatización
 apscheduler==3.10.4
+undetected-chromedriver==3.5.5

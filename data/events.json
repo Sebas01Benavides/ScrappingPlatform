@@ -1,0 +1,9 @@
+{
+    "status": "success",
+    "db_action": "sin_cambios",
+    "selector_sugerido": {
+        "status": "success",
+        "message": "Selector generado correctamente",
+        "selector": "h1, h2, h3, h4, h5, h6"
+    }
+}
