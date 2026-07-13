@@ -5,6 +5,7 @@ import time
 
 from apscheduler.schedulers.background import BackgroundScheduler
 
+
 logging.basicConfig(
     level=logging.INFO,
     filename="logs/scraper.log",
@@ -18,7 +19,7 @@ def job():
         subprocess.run([sys.executable, "main.py"], check=True)
         logging.info("Scheduler: Proceso main.py terminado correctamente.")
     except Exception as e:
-        logging.exception(f"Error en scheduler al ejecutar main.py: {e}")
+        logging.exception("Error en scheduler al ejecutar main.py: " + str(e))
 
 
 if __name__ == "__main__":
@@ -28,8 +29,11 @@ if __name__ == "__main__":
 
     logging.info("Scheduler iniciado. Ejecutando cada 30 minutos...")
 
+    job()
+
     try:
         while True:
             time.sleep(1)
     except (KeyboardInterrupt, SystemExit):
         scheduler.shutdown()
+        logging.info("Scheduler detenido.")

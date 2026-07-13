@@ -101,3 +101,66 @@ LINE 3: ...44793ca528f5f13b82098226ca3acf08f629d4e3ad1d20f', fuente = N...
 2026-07-12 00:54:18,220 - INFO - HTTP Request: POST https://voiceflip-openai.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
 2026-07-12 00:54:18,267 - INFO - Sin cambios para: Halo: Campaign Evolved (Windows/Xbox Series X|S) XBOX LIVE Key GLOBAL
 2026-07-12 00:54:18,269 - INFO - Proceso finalizado correctamente.
+2026-07-12 20:56:55,361 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-12 20:56:55,377 - INFO - Added job "job" to job store "default"
+2026-07-12 20:56:55,377 - INFO - Scheduler started
+2026-07-12 20:56:55,379 - INFO - Scheduler iniciado. Ejecutando cada 30 minutos...
+2026-07-12 20:56:55,379 - INFO - Scheduler: Ejecutando main.py...
+2026-07-12 20:56:58,237 - INFO - Iniciando proceso principal de scraping...
+2026-07-12 20:56:59,263 - INFO - Encontrado en https://www.wikipedia.org: WikipediaThe Free Encyclopedia
+2026-07-12 20:56:59,263 - INFO - Encontrado en https://www.wikipedia.org: 1,000,000+articles
+2026-07-12 20:56:59,263 - INFO - Encontrado en https://www.wikipedia.org: 100,000+articles
+2026-07-12 20:56:59,263 - INFO - Encontrado en https://www.wikipedia.org: 10,000+articles
+2026-07-12 20:56:59,263 - INFO - Encontrado en https://www.wikipedia.org: 1,000+articles
+2026-07-12 20:56:59,263 - INFO - Encontrado en https://www.wikipedia.org: 100+articles
+2026-07-12 20:57:17,097 - INFO - Texto detectado: 49,80 US$
+2026-07-12 20:57:17,105 - INFO - Texto detectado: 46,33 US$
+2026-07-12 20:57:17,112 - INFO - Texto detectado: 49,80 US$
+2026-07-12 20:57:17,120 - INFO - Texto detectado: 46,33 US$
+2026-07-12 20:57:17,132 - INFO - Texto detectado: 46,33 US$
+2026-07-12 20:57:17,140 - INFO - Texto detectado: 46,82 US$
+2026-07-12 20:57:17,153 - INFO - Precio encontrado: 46.33
+2026-07-12 20:57:22,782 - INFO - HTTP Request: POST https://voiceflip-openai.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2026-07-12 20:57:22,852 - INFO - Registro actualizado: Halo: Campaign Evolved (Windows/Xbox Series X|S) XBOX LIVE Key GLOBAL
+2026-07-12 20:57:22,868 - INFO - Proceso finalizado correctamente.
+2026-07-12 20:57:23,254 - INFO - Scheduler: Proceso main.py terminado correctamente.
+2026-07-12 21:29:49,077 - INFO - Iniciando proceso principal de scraping...
+2026-07-12 21:29:50,178 - INFO - Encontrado en https://www.wikipedia.org: WikipediaThe Free Encyclopedia
+2026-07-12 21:29:50,178 - INFO - Encontrado en https://www.wikipedia.org: 1,000,000+articles
+2026-07-12 21:29:50,179 - INFO - Encontrado en https://www.wikipedia.org: 100,000+articles
+2026-07-12 21:29:50,179 - INFO - Encontrado en https://www.wikipedia.org: 10,000+articles
+2026-07-12 21:29:50,179 - INFO - Encontrado en https://www.wikipedia.org: 1,000+articles
+2026-07-12 21:29:50,179 - INFO - Encontrado en https://www.wikipedia.org: 100+articles
+2026-07-12 21:30:04,677 - INFO - Texto detectado: 49,79 US$
+2026-07-12 21:30:04,689 - INFO - Texto detectado: 46,32 US$
+2026-07-12 21:30:04,704 - INFO - Texto detectado: 49,79 US$
+2026-07-12 21:30:04,726 - INFO - Texto detectado: 46,32 US$
+2026-07-12 21:30:04,747 - INFO - Texto detectado: 46,32 US$
+2026-07-12 21:30:04,760 - INFO - Texto detectado: 46,82 US$
+2026-07-12 21:30:04,781 - INFO - Precio encontrado: 46.32
+2026-07-12 21:30:10,704 - INFO - HTTP Request: POST https://voiceflip-openai.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2026-07-12 21:30:10,822 - INFO - Registro actualizado: Halo: Campaign Evolved (Windows/Xbox Series X|S) XBOX LIVE Key GLOBAL
+2026-07-12 21:30:10,828 - INFO - Proceso finalizado correctamente.
+2026-07-12 21:30:20,554 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-12 21:30:20,556 - INFO - Added job "job" to job store "default"
+2026-07-12 21:30:20,556 - INFO - Scheduler started
+2026-07-12 21:30:20,558 - INFO - Scheduler iniciado. Ejecutando cada 30 minutos...
+2026-07-12 21:30:20,558 - INFO - Scheduler: Ejecutando main.py...
+2026-07-12 21:30:22,626 - INFO - Iniciando proceso principal de scraping...
+2026-07-12 21:30:23,324 - INFO - Encontrado en https://www.wikipedia.org: WikipediaThe Free Encyclopedia
+2026-07-12 21:30:23,324 - INFO - Encontrado en https://www.wikipedia.org: 1,000,000+articles
+2026-07-12 21:30:23,324 - INFO - Encontrado en https://www.wikipedia.org: 100,000+articles
+2026-07-12 21:30:23,324 - INFO - Encontrado en https://www.wikipedia.org: 10,000+articles
+2026-07-12 21:30:23,324 - INFO - Encontrado en https://www.wikipedia.org: 1,000+articles
+2026-07-12 21:30:23,324 - INFO - Encontrado en https://www.wikipedia.org: 100+articles
+2026-07-12 21:30:36,925 - INFO - Texto detectado: 49,79 US$
+2026-07-12 21:30:36,937 - INFO - Texto detectado: 46,32 US$
+2026-07-12 21:30:36,948 - INFO - Texto detectado: 49,79 US$
+2026-07-12 21:30:36,972 - INFO - Texto detectado: 46,32 US$
+2026-07-12 21:30:36,983 - INFO - Texto detectado: 46,32 US$
+2026-07-12 21:30:36,998 - INFO - Texto detectado: 46,82 US$
+2026-07-12 21:30:37,020 - INFO - Precio encontrado: 46.32
+2026-07-12 21:30:42,744 - INFO - HTTP Request: POST https://voiceflip-openai.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2026-07-12 21:30:42,847 - INFO - Sin cambios para: Halo: Campaign Evolved (Windows/Xbox Series X|S) XBOX LIVE Key GLOBAL
+2026-07-12 21:30:42,876 - INFO - Proceso finalizado correctamente.
+2026-07-12 21:30:43,819 - INFO - Scheduler: Proceso main.py terminado correctamente.

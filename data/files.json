@@ -1,1 +1,12 @@
-[]
+[
+    {
+        "nombre": "eneba.png",
+        "ruta": "downloads\\eneba.png",
+        "tipo": "imagen"
+    },
+    {
+        "nombre": "pagina.html",
+        "ruta": "downloads\\pagina.html",
+        "tipo": "html"
+    }
+]

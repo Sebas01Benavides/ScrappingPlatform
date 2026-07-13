@@ -26,15 +26,16 @@ def ejecutar_scraping():
     print("[1] Abriendo navegador...")
     driver = webdriver.Chrome(options=options)
 
+    url = "https://www.eneba.com/latam/xbox-halo-campaign-evolved-windows-xbox-series-x-s-xbox-live-key-global"
+
     datos = {
         "titulo": "N/A",
         "precio": "0.00",
-        "fuente": "https://www.eneba.com/latam/xbox-halo-campaign-evolved-windows-xbox-series-x-s-xbox-live-key-global"
+        "fuente": url,
+        "downloaded_files": []
     }
 
     try:
-        url = "https://www.eneba.com/latam/xbox-halo-campaign-evolved-windows-xbox-series-x-s-xbox-live-key-global"
-
         print("[2] Entrando al sitio...")
         driver.get(url)
 
@@ -65,7 +66,7 @@ def ejecutar_scraping():
                     precio = float(match.group(1).replace(",", "."))
                     precios.append(precio)
 
-        if len(precios) > 0:
+        if precios:
             precio_menor = min(precios)
             datos["precio"] = "{:.2f}".format(precio_menor)
             print("[OK] Precio encontrado:", datos["precio"])
@@ -77,10 +78,26 @@ def ejecutar_scraping():
         downloads = Path("downloads")
         downloads.mkdir(exist_ok=True)
 
-        driver.save_screenshot(str(downloads / "eneba.png"))
+        screenshot_path = downloads / "eneba.png"
+        html_path = downloads / "pagina.html"
 
-        with open(downloads / "pagina.html", "w", encoding="utf-8") as f:
+        driver.save_screenshot(str(screenshot_path))
+
+        with open(html_path, "w", encoding="utf-8") as f:
             f.write(driver.page_source)
+
+        datos["downloaded_files"] = [
+            {
+                "nombre": screenshot_path.name,
+                "ruta": str(screenshot_path),
+                "tipo": "imagen"
+            },
+            {
+                "nombre": html_path.name,
+                "ruta": str(html_path),
+                "tipo": "html"
+            }
+        ]
 
     except Exception as e:
         print("[ERROR]", str(e))

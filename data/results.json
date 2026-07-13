@@ -14,7 +14,24 @@
     },
     "dynamic": {
         "titulo": "Halo: Campaign Evolved (Windows/Xbox Series X|S) XBOX LIVE Key GLOBAL",
-        "precio": "46.34",
-        "fuente": "https://www.eneba.com/latam/xbox-halo-campaign-evolved-windows-xbox-series-x-s-xbox-live-key-global"
+        "precio": "46.32",
+        "fuente": "https://www.eneba.com/latam/xbox-halo-campaign-evolved-windows-xbox-series-x-s-xbox-live-key-global",
+        "downloaded_files": [
+            {
+                "nombre": "eneba.png",
+                "ruta": "downloads\\eneba.png",
+                "tipo": "imagen"
+            },
+            {
+                "nombre": "pagina.html",
+                "ruta": "downloads\\pagina.html",
+                "tipo": "html"
+            }
+        ]
+    },
+    "selector_llm": {
+        "status": "success",
+        "message": "Selector generado correctamente",
+        "selector": "h2"
     }
 }

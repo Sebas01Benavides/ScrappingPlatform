@@ -11,6 +11,7 @@ from scraper.scraper_dynamic import ejecutar_scraping
 from scraper.scraper_static import scrap_estatico
 from llm.llm_selector import obtener_selector
 
+
 load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -108,14 +109,21 @@ def main():
         resultado_estatico = scrap_estatico("https://www.wikipedia.org")
         resultado_dinamico = ejecutar_scraping()
 
-        selector_sugerido = obtener_selector(
+        selector_resultado = obtener_selector(
             resultado_estatico.get("html_fragment", ""),
             "el selector CSS de los títulos h2 de la página"
         )
 
+        selector_final = None
+        if isinstance(selector_resultado, dict):
+            selector_final = selector_resultado.get("selector")
+        else:
+            selector_final = selector_resultado
+
         save_json("results.json", {
             "static": resultado_estatico,
-            "dynamic": resultado_dinamico
+            "dynamic": resultado_dinamico,
+            "selector_llm": selector_resultado
         })
 
         save_json("files.json", resultado_dinamico.get("downloaded_files", []))
@@ -147,7 +155,8 @@ def main():
         save_json("events.json", {
             "status": "success",
             "db_action": accion,
-            "selector_sugerido": selector_sugerido
+            "selector_sugerido": selector_final,
+            "selector_resultado": selector_resultado
         })
 
         logging.info("Proceso finalizado correctamente.")
