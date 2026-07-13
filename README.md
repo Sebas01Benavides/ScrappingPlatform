@@ -113,7 +113,7 @@ El enunciado también exige manejo de logs y excepciones.
 
 ## Automatización
 
-El archivo scheduler.py ejecuta main.py una vez al iniciar y luego repite la ejecución cada 30 minutos. Eso facilita tanto la demostración del proyecto como la automatización pedida.
+El archivo scheduler.py ejecuta main.py una vez al iniciar y luego repite la ejecución cada 30 minutos.
 
 ## Entregables incluidos
 

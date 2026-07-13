@@ -16,12 +16,15 @@ app = Flask(
     static_url_path=""
 )
 
+
 def get_db_connection():
     return psycopg2.connect(os.getenv("DATABASE_URL"))
+
 
 @app.route("/")
 def index():
     return render_template("index.html")
+
 
 @app.route("/datos", methods=["GET"])
 def obtener_datos():
@@ -31,7 +34,8 @@ def obtener_datos():
         cur = conn.cursor()
         cur.execute("""
             SELECT id, nombre, precio, hash_datos, fuente, fecha_extraccion
-            FROM juegos;
+            FROM juegos
+            ORDER BY id DESC;
         """)
         rows = cur.fetchall()
 
@@ -39,10 +43,10 @@ def obtener_datos():
             {
                 "id": r[0],
                 "nombre": r[1],
-                "precio": r[2],
+                "precio": str(r[2]) if r[2] is not None else "",
                 "hash_datos": r[3],
                 "fuente": r[4],
-                "fecha_extraccion": r[5]
+                "fecha_extraccion": str(r[5]) if r[5] is not None else ""
             }
             for r in rows
         ]
@@ -54,6 +58,7 @@ def obtener_datos():
     finally:
         if conn:
             conn.close()
+
 
 if __name__ == "__main__":
     app.run(port=5000, debug=True)

@@ -1,6 +1,40 @@
 {
     "status": "success",
-    "db_action": "sin_cambios",
+    "total_items": 8,
+    "acciones": [
+        {
+            "titulo": "Discord Nitro - 3 Month TRIAL Subscription Key GLOBAL",
+            "accion": "sin_cambios"
+        },
+        {
+            "titulo": "2400 Call of Duty: Modern Warfare Points (Xbox One) Xbox Live Key GLOBAL",
+            "accion": "sin_cambios"
+        },
+        {
+            "titulo": "Top Up Poppo Live Coins",
+            "accion": "sin_cambios"
+        },
+        {
+            "titulo": "Discord Nitro - 1 Month TRIAL Subscription Key GLOBAL",
+            "accion": "sin_cambios"
+        },
+        {
+            "titulo": "Minecraft: Java & Bedrock Edition (PC) Official website Key GLOBAL",
+            "accion": "sin_cambios"
+        },
+        {
+            "titulo": "Razer Gold Gift Card 5 USD Key GLOBAL",
+            "accion": "sin_cambios"
+        },
+        {
+            "titulo": "Xbox Game Pass Ultimate – 1 Month Subscription (Xbox/Windows) Non-stackable Key GLOBAL",
+            "accion": "sin_cambios"
+        },
+        {
+            "titulo": "Grand Theft Auto V Rockstar Games Launcher Key GLOBAL",
+            "accion": "sin_cambios"
+        }
+    ],
     "selector_sugerido": "h2",
     "selector_resultado": {
         "status": "success",

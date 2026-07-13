@@ -1,20 +1,13 @@
-from selenium.webdriver.common.by import By
-import re
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
-elementos = driver.find_elements(
-    By.XPATH,
-    "//*[contains(text(),'US$')]"
-)
+driver = webdriver.Chrome()
 
-precios = []
+driver.get("https://www.eneba.com/latam/store/games")
 
-for e in elementos:
-    texto = e.text.strip()
+input("Cuando termine de cargar, presiona Enter...")
 
-    m = re.search(r'(\d+,\d+)\s*US\$', texto)
-    if m:
-        precio = float(m.group(1).replace(",", "."))
-        precios.append(precio)
+with open("listado.html", "w", encoding="utf-8") as f:
+    f.write(driver.page_source)
 
-if precios:
-    datos["precio"] = f"{min(precios):.2f}"
+driver.quit()

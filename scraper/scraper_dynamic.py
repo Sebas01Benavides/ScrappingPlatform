@@ -15,6 +15,13 @@ logging.basicConfig(
 )
 
 
+def extraer_precio_de_texto(texto):
+    match = re.search(r"(\d+[.,]\d{2})", texto)
+    if match:
+        return f"{float(match.group(1).replace(',', '.')):.2f}"
+    return None
+
+
 def ejecutar_scraping():
     options = Options()
     # options.add_argument("--headless")
@@ -23,70 +30,29 @@ def ejecutar_scraping():
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
 
-    print("[1] Abriendo navegador...")
     driver = webdriver.Chrome(options=options)
 
-    url = "https://www.eneba.com/latam/xbox-halo-campaign-evolved-windows-xbox-series-x-s-xbox-live-key-global"
-
-    datos = {
-        "titulo": "N/A",
-        "precio": "0.00",
-        "fuente": url,
-        "downloaded_files": []
-    }
+    url = "https://www.eneba.com/store/all"
+    resultados = []
+    downloaded_files = []
 
     try:
-        print("[2] Entrando al sitio...")
+        logging.info("Abriendo listado de Eneba...")
         driver.get(url)
-
-        print("[3] Esperando carga...")
         time.sleep(10)
-
-        titulo = driver.find_element(By.TAG_NAME, "h1")
-        datos["titulo"] = titulo.text.strip()
-        print("[OK] Título:", datos["titulo"])
-
-        print("[4] Buscando elementos con precio...")
-        elementos = driver.find_elements(
-            By.XPATH,
-            "//*[contains(text(),'$') or contains(text(),'US$')]"
-        )
-
-        precios = []
-
-        for e in elementos:
-            texto = e.text.strip()
-
-            if texto:
-                print("Texto detectado:", texto)
-                logging.info("Texto detectado: " + texto)
-
-                match = re.search(r"(\d+[.,]\d{2})", texto)
-                if match:
-                    precio = float(match.group(1).replace(",", "."))
-                    precios.append(precio)
-
-        if precios:
-            precio_menor = min(precios)
-            datos["precio"] = "{:.2f}".format(precio_menor)
-            print("[OK] Precio encontrado:", datos["precio"])
-            logging.info("Precio encontrado: " + datos["precio"])
-        else:
-            print("[X] No se encontró un precio válido.")
-            logging.warning("No se encontró un precio válido.")
 
         downloads = Path("downloads")
         downloads.mkdir(exist_ok=True)
 
-        screenshot_path = downloads / "eneba.png"
-        html_path = downloads / "pagina.html"
+        screenshot_path = downloads / "eneba_listado.png"
+        html_path = downloads / "eneba_listado.html"
 
         driver.save_screenshot(str(screenshot_path))
 
         with open(html_path, "w", encoding="utf-8") as f:
             f.write(driver.page_source)
 
-        datos["downloaded_files"] = [
+        downloaded_files = [
             {
                 "nombre": screenshot_path.name,
                 "ruta": str(screenshot_path),
@@ -99,21 +65,82 @@ def ejecutar_scraping():
             }
         ]
 
+        tarjetas = driver.find_elements(By.CSS_SELECTOR, "a[title][href]")
+        logging.info(f"Se detectaron {len(tarjetas)} tarjetas con título.")
+
+        vistos = set()
+
+        for tarjeta in tarjetas:
+            titulo = tarjeta.get_attribute("title")
+            href_relativo = tarjeta.get_attribute("href")
+
+            if not titulo or not href_relativo:
+                continue
+
+            if titulo in vistos:
+                continue
+
+            precio = None
+
+            try:
+                contenedor = tarjeta.find_element(
+                    By.XPATH,
+                    "./ancestor::div[contains(@class,'uy1qit') or contains(@class,'igOVC')][1]"
+                )
+            except Exception:
+                contenedor = None
+
+            texto_precio = ""
+
+            if contenedor:
+                spans_precio = contenedor.find_elements(
+                    By.XPATH,
+                    ".//span[contains(text(),'.')]"
+                )
+                for span in spans_precio:
+                    posible = extraer_precio_de_texto(span.text.strip())
+                    if posible:
+                        texto_precio = posible
+                        break
+
+            if not texto_precio:
+                continue
+
+            vistos.add(titulo)
+
+            resultados.append({
+                "titulo": titulo.strip(),
+                "precio": texto_precio,
+                "fuente": href_relativo
+            })
+
+            logging.info(f"Juego detectado: {titulo.strip()} - {texto_precio}")
+
+            if len(resultados) >= 10:
+                break
+
+        logging.info(f"Se extrajeron {len(resultados)} juegos del listado.")
+
+        return {
+            "fuente": url,
+            "total": len(resultados),
+            "items": resultados,
+            "downloaded_files": downloaded_files
+        }
+
     except Exception as e:
-        print("[ERROR]", str(e))
         logging.exception("Error durante el scraping dinámico: " + str(e))
+        return {
+            "fuente": url,
+            "total": 0,
+            "items": [],
+            "downloaded_files": downloaded_files
+        }
 
     finally:
-        print("[5] Cerrando navegador...")
         driver.quit()
-
-    print("[6] Resultado final:", datos)
-    return datos
 
 
 if __name__ == "__main__":
     resultado = ejecutar_scraping()
-    print("Resultado del scraping")
-    print("----------------------")
-    print("Título :", resultado["titulo"])
-    print("Precio :", resultado["precio"])
+    print(resultado)

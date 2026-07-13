@@ -13,18 +13,59 @@
         "html_fragment": "<!DOCTYPE html>\n\n<html class=\"no-js\" lang=\"en\">\n<head>\n<meta charset=\"utf-8\"/>\n<title>Wikipedia</title>\n<meta content=\"Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation.\" name=\"description\"/>\n<script>\ndocument.documentElement.className = document.documentElement.className.replace( /(^|\\s)no-js(\\s|$)/, \"$1js-enabled$2\" );\n</script>\n<meta content=\"initial-scale=1,user-scalable=yes\" name=\"viewport\"/>\n<link href=\"/static/apple-touch/wikipedia.png\" rel=\"apple-touch-icon\"/>\n<link href=\"/static/favicon/wikipedia.ico\" rel=\"shortcut icon\"/>\n<link href=\"//creativecommons.org/licenses/by-sa/4.0/\" rel=\"license\"/>\n<style>\n.sprite{background-image:linear-gradient(transparent,transparent),url(portal/wikipedia.org/assets/img/sprite-e49fbf32.svg);background-repeat:no-repeat;display:inline-block;vertical-align:middle}.svg-Commons-logo_sister{background-position:0 0;width:47px;height:47px}.svg-MediaWiki-logo_sister{background-position:0 -47px;width:42px;height:42px}.svg-Meta-Wiki-logo_sister{background-position:0 -89px;width:37px;height:37px}.svg-Wikibooks-logo_sister{background-position:0 -126px;width:37px;height:37px}.s"
     },
     "dynamic": {
-        "titulo": "Halo: Campaign Evolved (Windows/Xbox Series X|S) XBOX LIVE Key GLOBAL",
-        "precio": "46.32",
-        "fuente": "https://www.eneba.com/latam/xbox-halo-campaign-evolved-windows-xbox-series-x-s-xbox-live-key-global",
+        "fuente": "https://www.eneba.com/store/all",
+        "total": 8,
+        "items": [
+            {
+                "titulo": "Discord Nitro - 3 Month TRIAL Subscription Key GLOBAL",
+                "precio": "0.54",
+                "fuente": "https://www.eneba.com/discord-discord-nitro-3-month-trial-subscription-key-global"
+            },
+            {
+                "titulo": "2400 Call of Duty: Modern Warfare Points (Xbox One) Xbox Live Key GLOBAL",
+                "precio": "5.12",
+                "fuente": "https://www.eneba.com/xbox-2400-call-of-duty-modern-warfare-points-xbox-one-xbox-live-key-global"
+            },
+            {
+                "titulo": "Top Up Poppo Live Coins",
+                "precio": "0.29",
+                "fuente": "https://www.eneba.com/top-up-poppo-live-coins-global"
+            },
+            {
+                "titulo": "Discord Nitro - 1 Month TRIAL Subscription Key GLOBAL",
+                "precio": "0.32",
+                "fuente": "https://www.eneba.com/discord-discord-nitro-1-month-trial-subscription-key-global"
+            },
+            {
+                "titulo": "Minecraft: Java & Bedrock Edition (PC) Official website Key GLOBAL",
+                "precio": "34.22",
+                "fuente": "https://www.eneba.com/other-minecraft-java-bedrock-edition-pc-official-website-key-global"
+            },
+            {
+                "titulo": "Razer Gold Gift Card 5 USD Key GLOBAL",
+                "precio": "4.68",
+                "fuente": "https://www.eneba.com/razer-razer-gold-gift-card-5-usd-key-global"
+            },
+            {
+                "titulo": "Xbox Game Pass Ultimate – 1 Month Subscription (Xbox/Windows) Non-stackable Key GLOBAL",
+                "precio": "14.82",
+                "fuente": "https://www.eneba.com/xbox-xbox-game-pass-ultimate-1-month-subscription-xbox-windows-non-stackable-key-global"
+            },
+            {
+                "titulo": "Grand Theft Auto V Rockstar Games Launcher Key GLOBAL",
+                "precio": "34.22",
+                "fuente": "https://www.eneba.com/rockstar-social-club-grand-theft-auto-v-gta-rockstar-social-club-key-global"
+            }
+        ],
         "downloaded_files": [
             {
-                "nombre": "eneba.png",
-                "ruta": "downloads\\eneba.png",
+                "nombre": "eneba_listado.png",
+                "ruta": "downloads\\eneba_listado.png",
                 "tipo": "imagen"
             },
             {
-                "nombre": "pagina.html",
-                "ruta": "downloads\\pagina.html",
+                "nombre": "eneba_listado.html",
+                "ruta": "downloads\\eneba_listado.html",
                 "tipo": "html"
             }
         ]

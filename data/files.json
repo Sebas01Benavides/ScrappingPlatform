@@ -1,12 +1,12 @@
 [
     {
-        "nombre": "eneba.png",
-        "ruta": "downloads\\eneba.png",
+        "nombre": "eneba_listado.png",
+        "ruta": "downloads\\eneba_listado.png",
         "tipo": "imagen"
     },
     {
-        "nombre": "pagina.html",
-        "ruta": "downloads\\pagina.html",
+        "nombre": "eneba_listado.html",
+        "ruta": "downloads\\eneba_listado.html",
         "tipo": "html"
     }
 ]

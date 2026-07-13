@@ -1,8 +1,7 @@
-import logging
-import subprocess
 import sys
 import time
-
+import logging
+import subprocess
 from apscheduler.schedulers.background import BackgroundScheduler
 
 
@@ -14,12 +13,13 @@ logging.basicConfig(
 
 
 def job():
+    """Ejecuta el proceso principal de scraping."""
     try:
         logging.info("Scheduler: Ejecutando main.py...")
         subprocess.run([sys.executable, "main.py"], check=True)
         logging.info("Scheduler: Proceso main.py terminado correctamente.")
     except Exception as e:
-        logging.exception("Error en scheduler al ejecutar main.py: " + str(e))
+        logging.error(f"Error en scheduler al ejecutar main.py: {e}")
 
 
 if __name__ == "__main__":
@@ -28,12 +28,11 @@ if __name__ == "__main__":
     scheduler.start()
 
     logging.info("Scheduler iniciado. Ejecutando cada 30 minutos...")
-
-    job()
+    print("Scheduler iniciado. Ejecutando cada 30 minutos. Presiona Ctrl+C para salir.")
 
     try:
         while True:
             time.sleep(1)
     except (KeyboardInterrupt, SystemExit):
         scheduler.shutdown()
-        logging.info("Scheduler detenido.")
+        print("Scheduler detenido.")

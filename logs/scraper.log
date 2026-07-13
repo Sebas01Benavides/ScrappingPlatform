@@ -164,3 +164,306 @@ LINE 3: ...44793ca528f5f13b82098226ca3acf08f629d4e3ad1d20f', fuente = N...
 2026-07-12 21:30:42,847 - INFO - Sin cambios para: Halo: Campaign Evolved (Windows/Xbox Series X|S) XBOX LIVE Key GLOBAL
 2026-07-12 21:30:42,876 - INFO - Proceso finalizado correctamente.
 2026-07-12 21:30:43,819 - INFO - Scheduler: Proceso main.py terminado correctamente.
+2026-07-12 21:45:36,783 - INFO - Iniciando proceso principal de scraping...
+2026-07-12 21:45:37,703 - INFO - Encontrado en https://www.wikipedia.org: WikipediaThe Free Encyclopedia
+2026-07-12 21:45:37,703 - INFO - Encontrado en https://www.wikipedia.org: 1,000,000+articles
+2026-07-12 21:45:37,703 - INFO - Encontrado en https://www.wikipedia.org: 100,000+articles
+2026-07-12 21:45:37,703 - INFO - Encontrado en https://www.wikipedia.org: 10,000+articles
+2026-07-12 21:45:37,703 - INFO - Encontrado en https://www.wikipedia.org: 1,000+articles
+2026-07-12 21:45:37,703 - INFO - Encontrado en https://www.wikipedia.org: 100+articles
+2026-07-12 21:45:39,759 - INFO - Abriendo listado de Eneba...
+2026-07-12 21:45:51,777 - INFO - Se extrajeron 10 juegos del listado.
+2026-07-12 21:45:57,296 - INFO - HTTP Request: POST https://voiceflip-openai.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2026-07-12 21:45:57,419 - INFO - Nuevo registro insertado: $0.54
+2026-07-12 21:45:57,422 - INFO - Nuevo registro insertado: $5.12
+2026-07-12 21:45:57,425 - INFO - Nuevo registro insertado: $0.29
+2026-07-12 21:45:57,426 - INFO - Nuevo registro insertado: $0.32
+2026-07-12 21:45:57,427 - INFO - Nuevo registro insertado: $34.23
+2026-07-12 21:45:57,428 - INFO - Nuevo registro insertado: $18.56
+2026-07-12 21:45:57,429 - INFO - Nuevo registro insertado: $4.68
+2026-07-12 21:45:57,431 - INFO - Nuevo registro insertado: $14.83
+2026-07-12 21:45:57,432 - INFO - Nuevo registro insertado: $11.96
+2026-07-12 21:45:57,433 - INFO - Nuevo registro insertado: $11.06
+2026-07-12 21:45:57,448 - INFO - Proceso finalizado correctamente.
+2026-07-12 21:48:17,625 - INFO - Iniciando proceso principal de scraping...
+2026-07-12 21:48:18,451 - INFO - Encontrado en https://www.wikipedia.org: WikipediaThe Free Encyclopedia
+2026-07-12 21:48:18,452 - INFO - Encontrado en https://www.wikipedia.org: 1,000,000+articles
+2026-07-12 21:48:18,452 - INFO - Encontrado en https://www.wikipedia.org: 100,000+articles
+2026-07-12 21:48:18,452 - INFO - Encontrado en https://www.wikipedia.org: 10,000+articles
+2026-07-12 21:48:18,452 - INFO - Encontrado en https://www.wikipedia.org: 1,000+articles
+2026-07-12 21:48:18,452 - INFO - Encontrado en https://www.wikipedia.org: 100+articles
+2026-07-12 21:48:20,245 - INFO - Abriendo listado de Eneba...
+2026-07-12 21:48:34,299 - INFO - Se extrajeron 0 juegos del listado.
+2026-07-12 21:48:40,129 - INFO - HTTP Request: POST https://voiceflip-openai.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2026-07-12 21:48:40,244 - INFO - Proceso finalizado correctamente.
+2026-07-12 21:52:23,703 - INFO - Iniciando proceso principal de scraping...
+2026-07-12 21:52:24,484 - INFO - Encontrado en https://www.wikipedia.org: WikipediaThe Free Encyclopedia
+2026-07-12 21:52:24,485 - INFO - Encontrado en https://www.wikipedia.org: 1,000,000+articles
+2026-07-12 21:52:24,485 - INFO - Encontrado en https://www.wikipedia.org: 100,000+articles
+2026-07-12 21:52:24,485 - INFO - Encontrado en https://www.wikipedia.org: 10,000+articles
+2026-07-12 21:52:24,485 - INFO - Encontrado en https://www.wikipedia.org: 1,000+articles
+2026-07-12 21:52:24,485 - INFO - Encontrado en https://www.wikipedia.org: 100+articles
+2026-07-12 21:52:26,296 - INFO - Abriendo listado de Eneba...
+2026-07-12 21:52:39,862 - INFO - Se detectaron 23 enlaces candidatos.
+2026-07-12 21:52:47,579 - INFO - Producto extra�do: Hi!
+It�s nice to see you! - None
+2026-07-12 21:52:54,095 - INFO - Producto extra�do: Hi!
+It�s nice to see you! - None
+2026-07-12 21:53:04,054 - INFO - Producto extra�do: Games up to 90% off!* - 0.32
+2026-07-12 21:53:13,011 - INFO - Producto extra�do: Better online security - 23.16
+2026-07-12 21:53:21,443 - INFO - Producto extra�do: Pirate in the Caribbean - 3.69
+2026-07-12 21:53:28,476 - INFO - Producto extra�do: Top Up Poppo Live Coins GLOBAL - 0.25
+2026-07-12 21:53:35,376 - WARNING - No se pudo procesar producto https://www.eneba.com/about-us: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=150.0.7871.115); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff79266a865+152a5]
+	chromedriver!GetHandleVerifier [0x7ff79266a8c0+15300]
+	chromedriver!(No symbol) [0x7ff7921c596d]
+	chromedriver!(No symbol) [0x7ff7921b1132]
+	chromedriver!(No symbol) [0x7ff7921d706c]
+	chromedriver!(No symbol) [0x7ff792250430]
+	chromedriver!(No symbol) [0x7ff79226d5b2]
+	chromedriver!(No symbol) [0x7ff792212b3c]
+	chromedriver!(No symbol) [0x7ff792213a53]
+	chromedriver!GetHandleVerifier [0x7ff792c4d3a1+5f7de1]
+	chromedriver!GetHandleVerifier [0x7ff792c47a3b+5f247b]
+	chromedriver!GetHandleVerifier [0x7ff792c6bca5+6166e5]
+	chromedriver!GetHandleVerifier [0x7ff7926872ae+31cee]
+	chromedriver!GetHandleVerifier [0x7ff79268fe3c+3a87c]
+	chromedriver!GetHandleVerifier [0x7ff792674404+1ee44]
+	chromedriver!GetHandleVerifier [0x7ff792674594+1efd4]
+	chromedriver!GetHandleVerifier [0x7ff7926575c7+2007]
+	KERNEL32!BaseThreadInitThunk [0x7ffc6a45e957+17]
+	ntdll!RtlUserThreadStart [0x7ffc6bc8ad6c+2c]
+
+2026-07-12 21:53:35,539 - WARNING - No se pudo procesar producto https://www.eneba.com/contacts: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff79266a865+152a5]
+	chromedriver!GetHandleVerifier [0x7ff79266a8c0+15300]
+	chromedriver!(No symbol) [0x7ff7921c5756]
+	chromedriver!(No symbol) [0x7ff792211ba6]
+	chromedriver!(No symbol) [0x7ff792248d72]
+	chromedriver!(No symbol) [0x7ff792242b92]
+	chromedriver!(No symbol) [0x7ff792242352]
+	chromedriver!(No symbol) [0x7ff79218de1b]
+	chromedriver!(No symbol) [0x7ff79218e472]
+	chromedriver!(No symbol) [0x7ff79218ea35]
+	chromedriver!GetHandleVerifier [0x7ff792c4d3a1+5f7de1]
+	chromedriver!GetHandleVerifier [0x7ff792c47a3b+5f247b]
+	chromedriver!GetHandleVerifier [0x7ff792c6bca5+6166e5]
+	chromedriver!GetHandleVerifier [0x7ff7926872ae+31cee]
+	chromedriver!GetHandleVerifier [0x7ff79268fe3c+3a87c]
+	chromedriver!(No symbol) [0x7ff79218d39c]
+	chromedriver!GetHandleVerifier [0x7ff792e2a558+7d4f98]
+	KERNEL32!BaseThreadInitThunk [0x7ffc6a45e957+17]
+	ntdll!RtlUserThreadStart [0x7ffc6bc8ad6c+2c]
+
+2026-07-12 21:53:35,540 - WARNING - No se pudo procesar producto https://www.eneba.com/is-eneba-legit: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff79266a865+152a5]
+	chromedriver!GetHandleVerifier [0x7ff79266a8c0+15300]
+	chromedriver!(No symbol) [0x7ff7921c5756]
+	chromedriver!(No symbol) [0x7ff792211ba6]
+	chromedriver!(No symbol) [0x7ff792248d72]
+	chromedriver!(No symbol) [0x7ff792242b92]
+	chromedriver!(No symbol) [0x7ff792242352]
+	chromedriver!(No symbol) [0x7ff79218de1b]
+	chromedriver!(No symbol) [0x7ff79218e472]
+	chromedriver!(No symbol) [0x7ff79218ea35]
+	chromedriver!GetHandleVerifier [0x7ff792c4d3a1+5f7de1]
+	chromedriver!GetHandleVerifier [0x7ff792c47a3b+5f247b]
+	chromedriver!GetHandleVerifier [0x7ff792c6bca5+6166e5]
+	chromedriver!GetHandleVerifier [0x7ff7926872ae+31cee]
+	chromedriver!GetHandleVerifier [0x7ff79268fe3c+3a87c]
+	chromedriver!(No symbol) [0x7ff79218d39c]
+	chromedriver!GetHandleVerifier [0x7ff792e2a558+7d4f98]
+	KERNEL32!BaseThreadInitThunk [0x7ffc6a45e957+17]
+	ntdll!RtlUserThreadStart [0x7ffc6bc8ad6c+2c]
+
+2026-07-12 21:53:35,542 - WARNING - No se pudo procesar producto https://www.eneba.com/support/article/how-to-buy-on-eneba: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff79266a865+152a5]
+	chromedriver!GetHandleVerifier [0x7ff79266a8c0+15300]
+	chromedriver!(No symbol) [0x7ff7921c5756]
+	chromedriver!(No symbol) [0x7ff792211ba6]
+	chromedriver!(No symbol) [0x7ff792248d72]
+	chromedriver!(No symbol) [0x7ff792242b92]
+	chromedriver!(No symbol) [0x7ff792242352]
+	chromedriver!(No symbol) [0x7ff79218de1b]
+	chromedriver!(No symbol) [0x7ff79218e472]
+	chromedriver!(No symbol) [0x7ff79218ea35]
+	chromedriver!GetHandleVerifier [0x7ff792c4d3a1+5f7de1]
+	chromedriver!GetHandleVerifier [0x7ff792c47a3b+5f247b]
+	chromedriver!GetHandleVerifier [0x7ff792c6bca5+6166e5]
+	chromedriver!GetHandleVerifier [0x7ff7926872ae+31cee]
+	chromedriver!GetHandleVerifier [0x7ff79268fe3c+3a87c]
+	chromedriver!(No symbol) [0x7ff79218d39c]
+	chromedriver!GetHandleVerifier [0x7ff792e2a558+7d4f98]
+	KERNEL32!BaseThreadInitThunk [0x7ffc6a45e957+17]
+	ntdll!RtlUserThreadStart [0x7ffc6bc8ad6c+2c]
+
+2026-07-12 21:53:35,542 - INFO - Se extrajeron 4 juegos del listado.
+2026-07-12 21:53:41,296 - INFO - HTTP Request: POST https://voiceflip-openai.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2026-07-12 21:53:41,388 - INFO - Nuevo registro insertado: Games up to 90% off!*
+2026-07-12 21:53:41,393 - INFO - Nuevo registro insertado: Better online security
+2026-07-12 21:53:41,395 - INFO - Nuevo registro insertado: Pirate in the Caribbean
+2026-07-12 21:53:41,396 - INFO - Nuevo registro insertado: Top Up Poppo Live Coins GLOBAL
+2026-07-12 21:53:41,439 - INFO - Proceso finalizado correctamente.
+2026-07-12 22:02:10,726 - INFO - Abriendo listado de Eneba...
+2026-07-12 22:02:24,030 - INFO - Se detectaron 0 enlaces candidatos.
+2026-07-12 22:02:24,031 - WARNING - No se detect� ninguna URL de producto. Revisa PATRON_PRODUCTO y RUTAS_EXCLUIDAS contra el HTML real guardado en downloads/eneba_listado.html
+2026-07-12 22:02:24,031 - INFO - Se extrajeron 0 juegos del listado.
+2026-07-12 22:03:32,285 - INFO - Iniciando proceso principal de scraping...
+2026-07-12 22:03:33,293 - INFO - Encontrado en https://www.wikipedia.org: WikipediaThe Free Encyclopedia
+2026-07-12 22:03:33,293 - INFO - Encontrado en https://www.wikipedia.org: 1,000,000+articles
+2026-07-12 22:03:33,293 - INFO - Encontrado en https://www.wikipedia.org: 100,000+articles
+2026-07-12 22:03:33,293 - INFO - Encontrado en https://www.wikipedia.org: 10,000+articles
+2026-07-12 22:03:33,293 - INFO - Encontrado en https://www.wikipedia.org: 1,000+articles
+2026-07-12 22:03:33,293 - INFO - Encontrado en https://www.wikipedia.org: 100+articles
+2026-07-12 22:03:34,744 - INFO - Abriendo listado de Eneba...
+2026-07-12 22:03:47,270 - INFO - Se detectaron 0 enlaces candidatos.
+2026-07-12 22:03:47,270 - WARNING - No se detect� ninguna URL de producto. Revisa PATRON_PRODUCTO y RUTAS_EXCLUIDAS contra el HTML real guardado en downloads/eneba_listado.html
+2026-07-12 22:03:47,270 - INFO - Se extrajeron 0 juegos del listado.
+2026-07-12 22:03:52,378 - INFO - HTTP Request: POST https://voiceflip-openai.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2026-07-12 22:03:52,437 - INFO - Proceso finalizado correctamente.
+2026-07-12 22:12:49,235 - INFO - Iniciando proceso principal de scraping...
+2026-07-12 22:12:50,069 - INFO - Encontrado en https://www.wikipedia.org: WikipediaThe Free Encyclopedia
+2026-07-12 22:12:50,069 - INFO - Encontrado en https://www.wikipedia.org: 1,000,000+articles
+2026-07-12 22:12:50,069 - INFO - Encontrado en https://www.wikipedia.org: 100,000+articles
+2026-07-12 22:12:50,069 - INFO - Encontrado en https://www.wikipedia.org: 10,000+articles
+2026-07-12 22:12:50,070 - INFO - Encontrado en https://www.wikipedia.org: 1,000+articles
+2026-07-12 22:12:50,070 - INFO - Encontrado en https://www.wikipedia.org: 100+articles
+2026-07-12 22:12:51,977 - INFO - Abriendo listado de Eneba...
+2026-07-12 22:13:04,296 - INFO - Se detectaron 22 tarjetas con t�tulo.
+2026-07-12 22:13:04,419 - INFO - Juego detectado: Discord Nitro - 3 Month TRIAL Subscription Key GLOBAL - 0.54
+2026-07-12 22:13:04,483 - INFO - Juego detectado: 2400 Call of Duty: Modern Warfare Points (Xbox One) Xbox Live Key GLOBAL - 5.12
+2026-07-12 22:13:04,553 - INFO - Juego detectado: Top Up Poppo Live Coins - 0.29
+2026-07-12 22:13:04,626 - INFO - Juego detectado: Discord Nitro - 1 Month TRIAL Subscription Key GLOBAL - 0.32
+2026-07-12 22:13:04,711 - INFO - Juego detectado: Minecraft: Java & Bedrock Edition (PC) Official website Key GLOBAL - 34.22
+2026-07-12 22:13:04,784 - INFO - Juego detectado: Razer Gold Gift Card 5 USD Key GLOBAL - 4.68
+2026-07-12 22:13:04,859 - INFO - Juego detectado: Xbox Game Pass Ultimate � 1 Month Subscription (Xbox/Windows) Non-stackable Key GLOBAL - 14.82
+2026-07-12 22:13:04,932 - INFO - Juego detectado: Grand Theft Auto V Rockstar Games Launcher Key GLOBAL - 34.22
+2026-07-12 22:13:05,077 - INFO - Se extrajeron 8 juegos del listado.
+2026-07-12 22:13:10,919 - INFO - HTTP Request: POST https://voiceflip-openai.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2026-07-12 22:13:11,051 - INFO - Nuevo registro insertado: Discord Nitro - 3 Month TRIAL Subscription Key GLOBAL
+2026-07-12 22:13:11,054 - INFO - Nuevo registro insertado: 2400 Call of Duty: Modern Warfare Points (Xbox One) Xbox Live Key GLOBAL
+2026-07-12 22:13:11,055 - INFO - Nuevo registro insertado: Top Up Poppo Live Coins
+2026-07-12 22:13:11,056 - INFO - Nuevo registro insertado: Discord Nitro - 1 Month TRIAL Subscription Key GLOBAL
+2026-07-12 22:13:11,056 - INFO - Nuevo registro insertado: Minecraft: Java & Bedrock Edition (PC) Official website Key GLOBAL
+2026-07-12 22:13:11,057 - INFO - Nuevo registro insertado: Razer Gold Gift Card 5 USD Key GLOBAL
+2026-07-12 22:13:11,059 - INFO - Nuevo registro insertado: Xbox Game Pass Ultimate � 1 Month Subscription (Xbox/Windows) Non-stackable Key GLOBAL
+2026-07-12 22:13:11,059 - INFO - Nuevo registro insertado: Grand Theft Auto V Rockstar Games Launcher Key GLOBAL
+2026-07-12 22:13:11,065 - INFO - Proceso finalizado correctamente.
+2026-07-12 22:18:30,101 - INFO - Iniciando proceso principal de scraping...
+2026-07-12 22:18:30,960 - INFO - Encontrado en https://www.wikipedia.org: WikipediaThe Free Encyclopedia
+2026-07-12 22:18:30,960 - INFO - Encontrado en https://www.wikipedia.org: 1,000,000+articles
+2026-07-12 22:18:30,960 - INFO - Encontrado en https://www.wikipedia.org: 100,000+articles
+2026-07-12 22:18:30,960 - INFO - Encontrado en https://www.wikipedia.org: 10,000+articles
+2026-07-12 22:18:30,960 - INFO - Encontrado en https://www.wikipedia.org: 1,000+articles
+2026-07-12 22:18:30,960 - INFO - Encontrado en https://www.wikipedia.org: 100+articles
+2026-07-12 22:18:32,550 - INFO - Abriendo listado de Eneba...
+2026-07-12 22:18:44,741 - INFO - Se detectaron 22 tarjetas con t�tulo.
+2026-07-12 22:18:44,916 - INFO - Juego detectado: Discord Nitro - 3 Month TRIAL Subscription Key GLOBAL - 0.54
+2026-07-12 22:18:44,974 - INFO - Juego detectado: 2400 Call of Duty: Modern Warfare Points (Xbox One) Xbox Live Key GLOBAL - 5.12
+2026-07-12 22:18:45,034 - INFO - Juego detectado: Top Up Poppo Live Coins - 0.29
+2026-07-12 22:18:45,099 - INFO - Juego detectado: Discord Nitro - 1 Month TRIAL Subscription Key GLOBAL - 0.32
+2026-07-12 22:18:45,201 - INFO - Juego detectado: Minecraft: Java & Bedrock Edition (PC) Official website Key GLOBAL - 34.22
+2026-07-12 22:18:45,259 - INFO - Juego detectado: Razer Gold Gift Card 5 USD Key GLOBAL - 4.68
+2026-07-12 22:18:45,309 - INFO - Juego detectado: Xbox Game Pass Ultimate � 1 Month Subscription (Xbox/Windows) Non-stackable Key GLOBAL - 14.82
+2026-07-12 22:18:45,361 - INFO - Juego detectado: Grand Theft Auto V Rockstar Games Launcher Key GLOBAL - 34.22
+2026-07-12 22:18:45,462 - INFO - Se extrajeron 8 juegos del listado.
+2026-07-12 22:18:50,962 - INFO - HTTP Request: POST https://voiceflip-openai.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2026-07-12 22:18:51,028 - INFO - Sin cambios para: Discord Nitro - 3 Month TRIAL Subscription Key GLOBAL
+2026-07-12 22:18:51,029 - INFO - Sin cambios para: 2400 Call of Duty: Modern Warfare Points (Xbox One) Xbox Live Key GLOBAL
+2026-07-12 22:18:51,030 - INFO - Sin cambios para: Top Up Poppo Live Coins
+2026-07-12 22:18:51,031 - INFO - Sin cambios para: Discord Nitro - 1 Month TRIAL Subscription Key GLOBAL
+2026-07-12 22:18:51,031 - INFO - Sin cambios para: Minecraft: Java & Bedrock Edition (PC) Official website Key GLOBAL
+2026-07-12 22:18:51,032 - INFO - Sin cambios para: Razer Gold Gift Card 5 USD Key GLOBAL
+2026-07-12 22:18:51,033 - INFO - Sin cambios para: Xbox Game Pass Ultimate � 1 Month Subscription (Xbox/Windows) Non-stackable Key GLOBAL
+2026-07-12 22:18:51,033 - INFO - Sin cambios para: Grand Theft Auto V Rockstar Games Launcher Key GLOBAL
+2026-07-12 22:18:51,078 - INFO - Proceso finalizado correctamente.
+2026-07-12 22:31:22,058 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-12 22:31:22,059 - INFO - Added job "job" to job store "default"
+2026-07-12 22:31:22,059 - INFO - Scheduler started
+2026-07-12 22:31:22,061 - INFO - Scheduler iniciado. Ejecutando cada 30 minutos...
+2026-07-12 22:31:22,061 - INFO - Scheduler: Ejecutando main.py...
+2026-07-12 22:31:24,032 - INFO - Iniciando proceso principal de scraping...
+2026-07-12 22:31:24,797 - INFO - Encontrado en https://www.wikipedia.org: WikipediaThe Free Encyclopedia
+2026-07-12 22:31:24,797 - INFO - Encontrado en https://www.wikipedia.org: 1,000,000+articles
+2026-07-12 22:31:24,797 - INFO - Encontrado en https://www.wikipedia.org: 100,000+articles
+2026-07-12 22:31:24,797 - INFO - Encontrado en https://www.wikipedia.org: 10,000+articles
+2026-07-12 22:31:24,797 - INFO - Encontrado en https://www.wikipedia.org: 1,000+articles
+2026-07-12 22:31:24,797 - INFO - Encontrado en https://www.wikipedia.org: 100+articles
+2026-07-12 22:31:26,722 - INFO - Abriendo listado de Eneba...
+2026-07-12 22:31:39,015 - INFO - Se detectaron 22 tarjetas con t�tulo.
+2026-07-12 22:31:39,112 - INFO - Juego detectado: Discord Nitro - 3 Month TRIAL Subscription Key GLOBAL - 0.54
+2026-07-12 22:31:39,158 - INFO - Juego detectado: 2400 Call of Duty: Modern Warfare Points (Xbox One) Xbox Live Key GLOBAL - 5.12
+2026-07-12 22:31:39,205 - INFO - Juego detectado: Top Up Poppo Live Coins - 0.29
+2026-07-12 22:31:39,258 - INFO - Juego detectado: Discord Nitro - 1 Month TRIAL Subscription Key GLOBAL - 0.32
+2026-07-12 22:31:39,313 - INFO - Juego detectado: Minecraft: Java & Bedrock Edition (PC) Official website Key GLOBAL - 34.22
+2026-07-12 22:31:39,381 - INFO - Juego detectado: Razer Gold Gift Card 5 USD Key GLOBAL - 4.68
+2026-07-12 22:31:39,455 - INFO - Juego detectado: Xbox Game Pass Ultimate � 1 Month Subscription (Xbox/Windows) Non-stackable Key GLOBAL - 14.82
+2026-07-12 22:31:39,534 - INFO - Juego detectado: Grand Theft Auto V Rockstar Games Launcher Key GLOBAL - 34.22
+2026-07-12 22:31:39,652 - INFO - Se extrajeron 8 juegos del listado.
+2026-07-12 22:31:45,402 - INFO - HTTP Request: POST https://voiceflip-openai.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2026-07-12 22:31:45,493 - INFO - Sin cambios para: Discord Nitro - 3 Month TRIAL Subscription Key GLOBAL
+2026-07-12 22:31:45,514 - INFO - Sin cambios para: 2400 Call of Duty: Modern Warfare Points (Xbox One) Xbox Live Key GLOBAL
+2026-07-12 22:31:45,514 - INFO - Sin cambios para: Top Up Poppo Live Coins
+2026-07-12 22:31:45,515 - INFO - Sin cambios para: Discord Nitro - 1 Month TRIAL Subscription Key GLOBAL
+2026-07-12 22:31:45,516 - INFO - Sin cambios para: Minecraft: Java & Bedrock Edition (PC) Official website Key GLOBAL
+2026-07-12 22:31:45,516 - INFO - Sin cambios para: Razer Gold Gift Card 5 USD Key GLOBAL
+2026-07-12 22:31:45,517 - INFO - Sin cambios para: Xbox Game Pass Ultimate � 1 Month Subscription (Xbox/Windows) Non-stackable Key GLOBAL
+2026-07-12 22:31:45,517 - INFO - Sin cambios para: Grand Theft Auto V Rockstar Games Launcher Key GLOBAL
+2026-07-12 22:31:45,521 - INFO - Proceso finalizado correctamente.
+2026-07-12 22:31:46,130 - INFO - Scheduler: Proceso main.py terminado correctamente.
+2026-07-12 22:33:41,254 - INFO - Scheduler has been shut down
+2026-07-12 22:33:41,255 - INFO - Scheduler detenido.
+2026-07-12 22:33:45,499 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-12 22:33:45,501 - INFO - Added job "job" to job store "default"
+2026-07-12 22:33:45,501 - INFO - Scheduler started
+2026-07-12 22:33:45,502 - INFO - Scheduler iniciado. Ejecutando cada 30 minutos...
+2026-07-12 23:03:45,512 - INFO - Running job "job (trigger: interval[0:30:00], next run at: 2026-07-12 23:03:45 CST)" (scheduled at 2026-07-12 23:03:45.499021-06:00)
+2026-07-12 23:03:45,512 - INFO - Scheduler: Ejecutando main.py...
+2026-07-12 23:03:46,127 - ERROR - Error en scheduler al ejecutar main.py: Command '['python', 'main.py']' returned non-zero exit status 1.
+2026-07-12 23:03:46,127 - INFO - Job "job (trigger: interval[0:30:00], next run at: 2026-07-12 23:33:45 CST)" executed successfully
+2026-07-12 23:06:11,223 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-12 23:06:11,225 - INFO - Added job "job" to job store "default"
+2026-07-12 23:06:11,225 - INFO - Scheduler started
+2026-07-12 23:06:11,226 - INFO - Scheduler iniciado. Ejecutando cada 30 minutos...
+2026-07-12 23:33:45,514 - INFO - Running job "job (trigger: interval[0:30:00], next run at: 2026-07-13 00:03:45 CST)" (scheduled at 2026-07-12 23:33:45.499021-06:00)
+2026-07-12 23:33:45,514 - INFO - Scheduler: Ejecutando main.py...
+2026-07-12 23:33:45,631 - ERROR - Error en scheduler al ejecutar main.py: Command '['python', 'main.py']' returned non-zero exit status 1.
+2026-07-12 23:33:45,631 - INFO - Job "job (trigger: interval[0:30:00], next run at: 2026-07-13 00:03:45 CST)" executed successfully
+2026-07-12 23:36:11,233 - INFO - Running job "job (trigger: interval[0:30:00], next run at: 2026-07-12 23:36:11 CST)" (scheduled at 2026-07-12 23:36:11.223817-06:00)
+2026-07-12 23:36:11,233 - INFO - Scheduler: Ejecutando main.py...
+2026-07-12 23:36:12,800 - INFO - Iniciando proceso principal de scraping...
+2026-07-12 23:36:13,957 - INFO - Encontrado en https://www.wikipedia.org: WikipediaThe Free Encyclopedia
+2026-07-12 23:36:13,957 - INFO - Encontrado en https://www.wikipedia.org: 1,000,000+articles
+2026-07-12 23:36:13,957 - INFO - Encontrado en https://www.wikipedia.org: 100,000+articles
+2026-07-12 23:36:13,957 - INFO - Encontrado en https://www.wikipedia.org: 10,000+articles
+2026-07-12 23:36:13,957 - INFO - Encontrado en https://www.wikipedia.org: 1,000+articles
+2026-07-12 23:36:13,957 - INFO - Encontrado en https://www.wikipedia.org: 100+articles
+2026-07-12 23:36:20,344 - INFO - Abriendo listado de Eneba...
+2026-07-12 23:36:32,348 - INFO - Se detectaron 22 tarjetas con t�tulo.
+2026-07-12 23:36:32,490 - INFO - Juego detectado: Discord Nitro - 3 Month TRIAL Subscription Key GLOBAL - 0.54
+2026-07-12 23:36:32,520 - INFO - Juego detectado: 2400 Call of Duty: Modern Warfare Points (Xbox One) Xbox Live Key GLOBAL - 5.12
+2026-07-12 23:36:32,548 - INFO - Juego detectado: Top Up Poppo Live Coins - 0.29
+2026-07-12 23:36:32,577 - INFO - Juego detectado: Discord Nitro - 1 Month TRIAL Subscription Key GLOBAL - 0.32
+2026-07-12 23:36:32,634 - INFO - Juego detectado: Minecraft: Java & Bedrock Edition (PC) Official website Key GLOBAL - 34.22
+2026-07-12 23:36:32,667 - INFO - Juego detectado: Razer Gold Gift Card 5 USD Key GLOBAL - 4.68
+2026-07-12 23:36:32,696 - INFO - Juego detectado: Xbox Game Pass Ultimate � 1 Month Subscription (Xbox/Windows) Non-stackable Key GLOBAL - 14.82
+2026-07-12 23:36:32,722 - INFO - Juego detectado: Grand Theft Auto V Rockstar Games Launcher Key GLOBAL - 34.22
+2026-07-12 23:36:32,769 - INFO - Se extrajeron 8 juegos del listado.
+2026-07-12 23:36:37,753 - INFO - HTTP Request: POST https://voiceflip-openai.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2026-07-12 23:36:37,802 - INFO - Sin cambios para: Discord Nitro - 3 Month TRIAL Subscription Key GLOBAL
+2026-07-12 23:36:37,813 - INFO - Sin cambios para: 2400 Call of Duty: Modern Warfare Points (Xbox One) Xbox Live Key GLOBAL
+2026-07-12 23:36:37,813 - INFO - Sin cambios para: Top Up Poppo Live Coins
+2026-07-12 23:36:37,814 - INFO - Sin cambios para: Discord Nitro - 1 Month TRIAL Subscription Key GLOBAL
+2026-07-12 23:36:37,814 - INFO - Sin cambios para: Minecraft: Java & Bedrock Edition (PC) Official website Key GLOBAL
+2026-07-12 23:36:37,814 - INFO - Sin cambios para: Razer Gold Gift Card 5 USD Key GLOBAL
+2026-07-12 23:36:37,815 - INFO - Sin cambios para: Xbox Game Pass Ultimate � 1 Month Subscription (Xbox/Windows) Non-stackable Key GLOBAL
+2026-07-12 23:36:37,815 - INFO - Sin cambios para: Grand Theft Auto V Rockstar Games Launcher Key GLOBAL
+2026-07-12 23:36:37,817 - INFO - Proceso finalizado correctamente.
+2026-07-12 23:36:38,186 - INFO - Scheduler: Proceso main.py terminado correctamente.
+2026-07-12 23:36:38,186 - INFO - Job "job (trigger: interval[0:30:00], next run at: 2026-07-13 00:06:11 CST)" executed successfully

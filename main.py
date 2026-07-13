@@ -83,7 +83,7 @@ def procesar_juego(conn, datos):
             cur.execute(
                 """
                 UPDATE juegos
-                SET precio = %s, hash_datos = %s, fuente = %s
+                SET precio = %s, hash_datos = %s, fuente = %s, fecha_extraccion = CURRENT_TIMESTAMP
                 WHERE id = %s
                 """,
                 (
@@ -134,27 +134,39 @@ def main():
         })
 
         conn = get_connection()
-        accion = procesar_juego(conn, resultado_dinamico)
 
-        with conn.cursor() as cur:
-            cur.execute(
-                """
-                INSERT INTO resultados_scraping (fuente, titulo, url_origen)
-                VALUES (%s, %s, %s)
-                """,
-                (
-                    resultado_dinamico.get("fuente"),
-                    resultado_dinamico.get("titulo"),
-                    resultado_dinamico.get("fuente")
-                )
+        acciones = []
+        items = resultado_dinamico.get("items", [])
+
+        for item in items:
+            accion = procesar_juego(conn, item)
+            acciones.append(
+                {
+                    "titulo": item.get("titulo"),
+                    "accion": accion
+                }
             )
 
-        guardar_log_db(conn, "EXITO", f"Proceso completado: {accion}")
+            with conn.cursor() as cur:
+                cur.execute(
+                    """
+                    INSERT INTO resultados_scraping (fuente, titulo, url_origen)
+                    VALUES (%s, %s, %s)
+                    """,
+                    (
+                        item.get("fuente"),
+                        item.get("titulo"),
+                        item.get("fuente")
+                    )
+                )
+
+        guardar_log_db(conn, "EXITO", f"Proceso completado. Registros procesados: {len(items)}")
         conn.commit()
 
         save_json("events.json", {
             "status": "success",
-            "db_action": accion,
+            "total_items": len(items),
+            "acciones": acciones,
             "selector_sugerido": selector_final,
             "selector_resultado": selector_resultado
         })
