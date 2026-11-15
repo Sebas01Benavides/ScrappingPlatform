@@ -1,5 +1,11 @@
 # Plataforma de Scraping, API y Dashboard
 
+<!-- local-development:start -->
+## Desarrollo local
+
+Consulta [RUNNING.md](RUNNING.md) para ubicar cada componente, abrirlo en su IDE, compilarlo y conocer las comprobaciones realizadas y los requisitos pendientes.
+<!-- local-development:end -->
+
 Proyecto desarrollado en Python para realizar scraping de datos, almacenar cambios en PostgreSQL, exponer resultados en formato JSON mediante Flask y visualizar la información en un dashboard web. Además, incluye un scheduler con APScheduler para ejecutar el proceso automáticamente cada 30 minutos.
 
 ## Tecnologías usadas
